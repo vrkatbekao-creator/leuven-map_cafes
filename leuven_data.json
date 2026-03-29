@@ -1,0 +1,360 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": "2026-03-29T00:00:00Z",
+    "city": "Leuven, Belgium",
+    "attractions": 10,
+    "cafes": 8,
+    "pairs": 22,
+    "languages": ["en", "nl", "fr", "de", "zh"],
+    "source": "Demo data — replace with output from leuven_scraper_v3.py",
+    "note": "Run: python leuven_scraper_v3.py --google-key YOUR_KEY"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7006, 50.8799] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_001",
+        "name": "Stadhuis & Grote Markt",
+        "names": { "en": "Stadhuis & Grote Markt", "nl": "Stadhuis & Grote Markt", "fr": "Hôtel de ville & Grande Place", "de": "Rathaus & Großer Markt", "zh": "市政廳與大廣場" },
+        "category": "highlight",
+        "description": "One of Belgium's finest Gothic town halls.",
+        "descriptions": {
+          "en": "One of Belgium's finest Gothic town halls, overlooking the vibrant main square.",
+          "nl": "Een van de mooiste gotische stadhizen van België, aan het bruisende Grote Markt.",
+          "fr": "L'un des plus beaux hôtels de ville gothiques de Belgique, sur la place centrale.",
+          "de": "Eines der schönsten gotischen Rathäuser Belgiens am lebhaften Hauptplatz.",
+          "zh": "比利時最精美的哥德式市政廳之一，坐落於熱鬧的市中心廣場。"
+        },
+        "url": "https://www.visitleuven.be/stadhuis",
+        "nearby_cafes": [
+          { "cafe_id": "CAF_001", "name": "Grand Café (demo)", "distance_m": 80, "wifi": "yes", "socket": "yes", "maps_url": "https://www.google.com/maps?q=50.8792,4.7009" },
+          { "cafe_id": "CAF_002", "name": "Café Belge (demo)", "distance_m": 145, "wifi": "unknown", "socket": "unknown", "maps_url": "https://www.google.com/maps?q=50.8785,4.7015" }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7038, 50.8790] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_002",
+        "name": "Oude Markt",
+        "names": { "en": "Oude Markt", "nl": "Oude Markt", "fr": "Vieux Marché", "de": "Alter Markt", "zh": "舊市場廣場" },
+        "category": "highlight",
+        "description": "Europe's longest bar — 40+ cafes in one square.",
+        "descriptions": {
+          "en": "Europe's longest bar: over 40 cafes and bars packed into one lively square.",
+          "nl": "Europa's langste toog: meer dan 40 cafés en bars op één bruisend plein.",
+          "fr": "Le plus long bar d'Europe : plus de 40 cafés et bars sur une seule place animée.",
+          "de": "Europas längste Theke: über 40 Cafés und Bars auf einem einzigen lebhaften Platz.",
+          "zh": "歐洲最長的酒吧街：超過40間咖啡館與酒吧匯聚於一個熱鬧廣場。"
+        },
+        "url": "https://www.visitleuven.be/oude-markt",
+        "nearby_cafes": [
+          { "cafe_id": "CAF_004", "name": "Oude Markt Bar (demo)", "distance_m": 30, "wifi": "unknown", "socket": "no", "maps_url": "https://www.google.com/maps?q=50.8788,4.7045" }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7024, 50.8779] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_003",
+        "name": "Universiteitsbibliotheek",
+        "names": { "en": "University Library & Tower", "nl": "Universiteitsbibliotheek & -toren", "fr": "Bibliothèque universitaire & tour", "de": "Universitätsbibliothek & Turm", "zh": "魯汶大學圖書館與鐘樓" },
+        "category": "university",
+        "description": "KU Leuven's iconic library tower.",
+        "descriptions": {
+          "en": "KU Leuven's iconic library tower, rebuilt after WWI with donations from the USA.",
+          "nl": "De iconische bibliotheektoren van KU Leuven, herbouwd na WO I met Amerikaanse giften.",
+          "fr": "La tour emblématique de la bibliothèque de KU Leuven, reconstruite après la Première Guerre mondiale.",
+          "de": "Der ikonische Bibliotheksturm der KU Leuven, nach dem Ersten Weltkrieg wiederaufgebaut.",
+          "zh": "魯汶大學標誌性圖書館塔樓，一戰後由美國捐款重建，是城市的精神象徵。"
+        },
+        "url": "https://www.visitleuven.be/universiteitsbibliotheek-toren",
+        "nearby_cafes": [
+          { "cafe_id": "CAF_003", "name": "Study Café KUL (demo)", "distance_m": 180, "wifi": "yes", "socket": "yes", "maps_url": "https://www.google.com/maps?q=50.8760,4.6985" }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6971, 50.8736] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_004",
+        "name": "Groot Begijnhof",
+        "names": { "en": "Groot Begijnhof", "nl": "Groot Begijnhof", "fr": "Grand Béguinage", "de": "Großes Beginenhof", "zh": "大貝居安院" },
+        "category": "religious",
+        "description": "UNESCO World Heritage beguinage.",
+        "descriptions": {
+          "en": "UNESCO World Heritage beguinage — a perfectly preserved medieval walled village within the city.",
+          "nl": "UNESCO Werelderfgoed begijnhof — een perfect bewaard middeleeuws dorp binnen de stad.",
+          "fr": "Béguinage classé au patrimoine mondial de l'UNESCO — village médiéval intact au cœur de la ville.",
+          "de": "UNESCO-Weltkulturerbe — ein perfekt erhaltenes mittelalterliches Dorf in der Stadt.",
+          "zh": "聯合國教科文組織世界遺產，城市中保存完好的中世紀圍牆村落。"
+        },
+        "url": "https://www.visitleuven.be/groot-begijnhof",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6991, 50.8773] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_005",
+        "name": "M Leuven",
+        "names": { "en": "M Leuven", "nl": "M Leuven", "fr": "M Leuven", "de": "M Leuven", "zh": "魯汶市立博物館 M" },
+        "category": "museum",
+        "description": "City museum — art & history.",
+        "descriptions": {
+          "en": "Leuven's city museum spanning art and history, including Roger van der Weyden masterworks.",
+          "nl": "Het stadsmuseum van Leuven met kunst en geschiedenis, inclusief werken van Van der Weyden.",
+          "fr": "Le musée municipal de Louvain, de l'art et de l'histoire, avec des œuvres de Van der Weyden.",
+          "de": "Leuven's Stadtmuseum mit Kunst und Geschichte, u.a. Werke von Roger van der Weyden.",
+          "zh": "魯汶市立博物館，館藏橫跨藝術與歷史，收有羅希爾·范德魏登名作。"
+        },
+        "url": "https://www.visitleuven.be/mleuven",
+        "nearby_cafes": [
+          { "cafe_id": "CAF_001", "name": "Grand Café (demo)", "distance_m": 220, "wifi": "yes", "socket": "yes", "maps_url": "https://www.google.com/maps?q=50.8792,4.7009" }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7082, 50.8857] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_006",
+        "name": "Vaartkom",
+        "names": { "en": "Vaartkom", "nl": "Vaartkom", "fr": "Vaartkom", "de": "Vaartkom", "zh": "運河區 Vaartkom" },
+        "category": "highlight",
+        "description": "Hip canal district.",
+        "descriptions": {
+          "en": "Former industrial canal district transformed into a hip hub of restaurants and bars.",
+          "nl": "Voormalige industriële kanaalwijk, nu een trendy hotspot met restaurants en bars.",
+          "fr": "Ancien quartier industriel au bord du canal, devenu un lieu branché de restaurants.",
+          "de": "Ehemaliges Industriekanalviertel, heute trendiger Hotspot mit Restaurants und Bars.",
+          "zh": "前工業運河區，如今搖身一變為充滿活力的餐廳與酒吧聚集地。"
+        },
+        "url": "https://www.visitleuven.be/vaartkom",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6782, 50.8647] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_007",
+        "name": "Arenbergkasteel",
+        "names": { "en": "Arenberg Castle & Park", "nl": "Arenbergkasteel & -park", "fr": "Château d'Arenberg & parc", "de": "Arenberg-Schloss & Park", "zh": "阿倫貝格城堡與公園" },
+        "category": "university",
+        "description": "Neo-Gothic castle with park.",
+        "descriptions": {
+          "en": "A neo-Gothic castle set in a beautiful park, now home to KU Leuven engineering faculty.",
+          "nl": "Een neogotisch kasteel in een prachtig park, nu de thuisbasis van de ingenieursfaculteit.",
+          "fr": "Un château néo-gothique dans un beau parc, abritant la faculté d'ingénierie de KU Leuven.",
+          "de": "Ein neugotisches Schloss in einem schönen Park, heute Sitz der Ingenieursfakultät.",
+          "zh": "新哥德式城堡坐落於美麗公園中，現為魯汶大學工學院所在地。"
+        },
+        "url": "https://www.visitleuven.be/arenbergkasteel-park",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6935, 50.8752] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_008",
+        "name": "PARCUM",
+        "names": { "en": "PARCUM", "nl": "PARCUM", "fr": "PARCUM", "de": "PARCUM", "zh": "宗教藝術博物館 PARCUM" },
+        "category": "museum",
+        "description": "Museum of religious art and culture.",
+        "descriptions": {
+          "en": "Museum of religious art and culture with an exceptional collection of sacred objects.",
+          "nl": "Museum voor religieuze kunst en cultuur met een uitzonderlijke collectie sacrale objecten.",
+          "fr": "Musée d'art et de culture religieux avec une collection exceptionnelle d'objets sacrés.",
+          "de": "Museum für religiöse Kunst und Kultur mit einer außergewöhnlichen Sammlung sakraler Objekte.",
+          "zh": "宗教藝術與文化博物館，典藏豐富的宗教聖物與藝術珍品。"
+        },
+        "url": "https://www.visitleuven.be/parcum",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6940, 50.8830] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_009",
+        "name": "Abdij Keizersberg",
+        "names": { "en": "Abdij Keizersberg", "nl": "Abdij Keizersberg", "fr": "Abbaye du Mont César", "de": "Abtei Keizersberg", "zh": "凱澤斯貝格修道院" },
+        "category": "religious",
+        "description": "Benedictine abbey perched on a hill.",
+        "descriptions": {
+          "en": "Benedictine abbey perched on a hill with peaceful gardens overlooking the city.",
+          "nl": "Benedictijnenabdij op een heuvel met rustige tuinen en uitzicht over de stad.",
+          "fr": "Abbaye bénédictine sur une colline avec des jardins paisibles dominant la ville.",
+          "de": "Benediktinerabtei auf einem Hügel mit ruhigen Gärten und Blick über die Stadt.",
+          "zh": "本篤會修道院，建於山丘之上，庭園清幽，可俯瞰整座城市。"
+        },
+        "url": "https://www.visitleuven.be/abdij-keizersberg",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6940, 50.8841] },
+      "properties": {
+        "feature_type": "attraction", "id": "ATT_010",
+        "name": "Janseniuspark",
+        "names": { "en": "Janseniuspark", "nl": "Janseniuspark", "fr": "Parc Jansénius", "de": "Janseniuspark", "zh": "揚森尼烏斯公園" },
+        "category": "green",
+        "description": "Peaceful park near the city centre.",
+        "descriptions": {
+          "en": "A peaceful green park near the city centre, perfect for a rest between sightseeing.",
+          "nl": "Een rustig groen park dicht bij het stadscentrum, ideaal voor een pauze.",
+          "fr": "Un parc verdoyant et tranquille près du centre-ville, idéal pour une pause.",
+          "de": "Ein ruhiger Grünpark nahe dem Stadtzentrum, ideal für eine Pause.",
+          "zh": "靠近市中心的寧靜綠色公園，是觀光途中休憩的理想場所。"
+        },
+        "url": "https://www.visitleuven.be/janseniuspark",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7009, 50.8792] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_001",
+        "name": "Grand Café (demo)",
+        "cafe_type": "cafe",
+        "address": "Grote Markt 5, 3000 Leuven",
+        "open_hr": "Monday: 8:00 AM – 10:00 PM | Tuesday: 8:00 AM – 10:00 PM | Wednesday: 8:00 AM – 10:00 PM | Thursday: 8:00 AM – 10:00 PM | Friday: 8:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 10:00 AM – 9:00 PM",
+        "open_now": "yes",
+        "wifi": "yes", "socket": "yes",
+        "price_avg": "€€", "rating": 4.3, "ratings_total": 312,
+        "quite": "unknown",
+        "maps_url": "https://www.google.com/maps?q=50.8792,4.7009",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7015, 50.8785] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_002",
+        "name": "Café Belge (demo)",
+        "cafe_type": "cafe",
+        "address": "Naamsestraat 12, 3000 Leuven",
+        "open_hr": "Monday: 9:00 AM – 6:00 PM | Tuesday: 9:00 AM – 6:00 PM | Wednesday: 9:00 AM – 6:00 PM | Thursday: 9:00 AM – 6:00 PM | Friday: 9:00 AM – 6:00 PM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown", "socket": "unknown",
+        "price_avg": "€", "rating": 3.8, "ratings_total": 87,
+        "quite": "unknown",
+        "maps_url": "https://www.google.com/maps?q=50.8785,4.7015",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6985, 50.8760] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_003",
+        "name": "Study Café KUL (demo)",
+        "cafe_type": "coworking",
+        "address": "Naamsestraat 63, 3000 Leuven",
+        "open_hr": "Monday: 8:00 AM – 8:00 PM | Tuesday: 8:00 AM – 8:00 PM | Wednesday: 8:00 AM – 8:00 PM | Thursday: 8:00 AM – 8:00 PM | Friday: 8:00 AM – 6:00 PM | Saturday: Closed | Sunday: Closed",
+        "open_now": "yes",
+        "wifi": "yes", "socket": "yes",
+        "price_avg": "€€", "rating": 4.6, "ratings_total": 208,
+        "quite": "yes",
+        "maps_url": "https://www.google.com/maps?q=50.8760,4.6985",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7045, 50.8788] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_004",
+        "name": "Oude Markt Bar (demo)",
+        "cafe_type": "bar",
+        "address": "Oude Markt 22, 3000 Leuven",
+        "open_hr": "Monday: 10:00 AM – 3:00 AM | Tuesday: 10:00 AM – 3:00 AM | Wednesday: 10:00 AM – 3:00 AM | Thursday: 10:00 AM – 3:00 AM | Friday: 10:00 AM – 4:00 AM | Saturday: 10:00 AM – 4:00 AM | Sunday: 12:00 PM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown", "socket": "no",
+        "price_avg": "€€", "rating": 4.1, "ratings_total": 445,
+        "quite": "unknown",
+        "maps_url": "https://www.google.com/maps?q=50.8788,4.7045",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7000, 50.8800] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_005",
+        "name": "Koffie & Co (demo)",
+        "cafe_type": "cafe",
+        "address": "Bondgenotenlaan 8, 3000 Leuven",
+        "open_hr": "Monday: 7:30 AM – 7:00 PM | Tuesday: 7:30 AM – 7:00 PM | Wednesday: 7:30 AM – 7:00 PM | Thursday: 7:30 AM – 7:00 PM | Friday: 7:30 AM – 7:00 PM | Saturday: 8:00 AM – 6:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "yes", "socket": "yes",
+        "price_avg": "€€", "rating": 4.4, "ratings_total": 176,
+        "quite": "unknown",
+        "maps_url": "https://www.google.com/maps?q=50.8800,4.7000",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7050, 50.8810] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_006",
+        "name": "Vaartkom Espresso (demo)",
+        "cafe_type": "cafe",
+        "address": "Vaartstraat 14, 3000 Leuven",
+        "open_hr": "Monday: Closed | Tuesday: 9:00 AM – 5:00 PM | Wednesday: 9:00 AM – 5:00 PM | Thursday: 9:00 AM – 5:00 PM | Friday: 9:00 AM – 6:00 PM | Saturday: 10:00 AM – 5:00 PM | Sunday: 10:00 AM – 4:00 PM",
+        "open_now": "yes",
+        "wifi": "yes", "socket": "unknown",
+        "price_avg": "€€", "rating": 4.5, "ratings_total": 93,
+        "quite": "yes",
+        "maps_url": "https://www.google.com/maps?q=50.8810,4.7050",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.6960, 50.8745] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_007",
+        "name": "Begijnhof Café (demo)",
+        "cafe_type": "cafe",
+        "address": "Schapenstraat 3, 3000 Leuven",
+        "open_hr": "Monday: Closed | Tuesday: 10:00 AM – 6:00 PM | Wednesday: 10:00 AM – 6:00 PM | Thursday: 10:00 AM – 6:00 PM | Friday: 10:00 AM – 6:00 PM | Saturday: 10:00 AM – 6:00 PM | Sunday: 11:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "yes", "socket": "yes",
+        "price_avg": "€€", "rating": 4.7, "ratings_total": 134,
+        "quite": "yes",
+        "maps_url": "https://www.google.com/maps?q=50.8745,4.6960",
+        "website": "", "source": "demo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.7020, 50.8770] },
+      "properties": {
+        "feature_type": "cafe", "id": "CAF_008",
+        "name": "Alma Cafetaria KUL (demo)",
+        "cafe_type": "coworking",
+        "address": "Naamsestraat 80, 3000 Leuven",
+        "open_hr": "Monday: 8:00 AM – 3:00 PM | Tuesday: 8:00 AM – 3:00 PM | Wednesday: 8:00 AM – 3:00 PM | Thursday: 8:00 AM – 3:00 PM | Friday: 8:00 AM – 3:00 PM | Saturday: Closed | Sunday: Closed",
+        "open_now": "yes",
+        "wifi": "yes", "socket": "yes",
+        "price_avg": "€", "rating": 3.9, "ratings_total": 521,
+        "quite": "unknown",
+        "maps_url": "https://www.google.com/maps?q=50.8770,4.7020",
+        "website": "https://www.alma.be", "source": "demo"
+      }
+    }
+  ]
+}
