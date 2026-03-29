@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Leuven tourism & WiFi cafe map — EN/NL/FR/DE/中文">
+<title>Leuven Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"/>
+<style>
+:root{
+  --bg:#0f1117;--surface:#1a1d27;--surface2:#22263a;--border:#2a2d3a;
+  --text:#e8eaf0;--muted:#7a7f96;
+  --green:#2ecc71;--blue:#3b8bd4;--amber:#f0a500;--red:#e24b4a;
+  --topbar:44px;--sidebar:320px;--peek:156px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+  font-family:'Segoe UI','Microsoft JhengHei','Noto Sans TC',system-ui,sans-serif;
+  -webkit-tap-highlight-color:transparent;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--text)}
+button{font-family:inherit;cursor:pointer}
+
+/* ── TOP BAR ── */
+#topbar{
+  position:fixed;top:0;left:0;right:0;
+  height:calc(var(--topbar) + var(--safe-t));
+  padding-top:var(--safe-t);
+  background:var(--surface);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:5px;
+  padding-left:12px;padding-right:8px;
+  z-index:4000;overflow-x:auto;scrollbar-width:none;
+}
+#topbar::-webkit-scrollbar{display:none}
+#topbar-title{font-size:13px;font-weight:700;white-space:nowrap;flex-shrink:0;margin-right:4px}
+.lang-btn{
+  flex-shrink:0;padding:3px 10px;border-radius:12px;
+  border:1px solid var(--border);background:transparent;
+  color:var(--muted);font-size:11px;font-weight:500;min-height:28px;
+  white-space:nowrap;transition:all .15s;
+}
+.lang-btn.active{background:var(--amber);color:#000;border-color:transparent;font-weight:700}
+#topbar-spacer{flex:1;min-width:4px}
+#fab-theme{
+  flex-shrink:0;width:32px;height:32px;border-radius:50%;
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);font-size:15px;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── MAP ── */
+#map{
+  position:fixed;
+  top:calc(var(--topbar) + var(--safe-t));
+  left:0;right:0;bottom:0;z-index:1;
+}
+
+/* ── FABs ── */
+#fabs{
+  position:fixed;right:12px;z-index:3000;
+  display:flex;flex-direction:column;gap:8px;
+  bottom:calc(var(--peek) + var(--safe-b) + 14px);
+  transition:bottom .32s cubic-bezier(.4,0,.2,1);
+}
+.fab{
+  width:46px;height:46px;border-radius:50%;
+  background:var(--surface);border:1px solid var(--border);color:var(--text);
+  font-size:18px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(0,0,0,.5);transition:transform .15s;
+}
+.fab:active{transform:scale(.88)}
+
+/* ── BOTTOM SHEET ── */
+#sheet{
+  position:fixed;left:0;right:0;bottom:0;z-index:2000;
+  background:var(--surface);border-radius:18px 18px 0 0;
+  box-shadow:0 -2px 24px rgba(0,0,0,.55);
+  display:flex;flex-direction:column;
+  transform:translateY(calc(100% - var(--peek) - var(--safe-b)));
+  transition:transform .32s cubic-bezier(.4,0,.2,1);
+  max-height:calc(100dvh - var(--topbar) - var(--safe-t) - 12px);
+  will-change:transform;
+  padding-bottom:max(var(--safe-b),8px);
+}
+#handle{
+  padding:9px 0 2px;display:flex;flex-direction:column;
+  align-items:center;gap:4px;cursor:grab;flex-shrink:0;touch-action:none;
+}
+#handle:active{cursor:grabbing}
+#handle-pill{width:38px;height:4px;border-radius:3px;background:var(--border)}
+#sheet-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:2px 14px 8px;flex-shrink:0;
+}
+#sheet-title{font-size:13px;font-weight:700}
+#sheet-meta{font-size:10px;color:var(--muted);margin-top:1px}
+#reload-btn{
+  font-size:11px;padding:4px 10px;border-radius:10px;min-height:30px;
+  border:1px solid var(--border);background:transparent;color:var(--muted);
+}
+
+/* ── STATS ── */
+#stats{
+  display:flex;border-top:1px solid var(--border);border-bottom:1px solid var(--border);flex-shrink:0;
+}
+.stat{flex:1;padding:8px 4px;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat .num{font-size:18px;font-weight:700;line-height:1}
+.stat .lbl{font-size:9px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.4px}
+
+/* ── FILTERS ── */
+#filters{
+  padding:8px 12px;border-bottom:1px solid var(--border);
+  display:flex;flex-direction:column;gap:7px;flex-shrink:0;
+}
+.filter-row{display:flex;align-items:center;gap:8px}
+.filter-label{
+  font-size:9px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.8px;color:var(--muted);white-space:nowrap;
+  flex-shrink:0;min-width:36px;
+}
+.pill-row{
+  display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;padding-bottom:1px;
+}
+.pill-row::-webkit-scrollbar{display:none}
+.pill{
+  flex-shrink:0;padding:5px 11px;border-radius:16px;
+  border:1px solid var(--border);background:var(--bg);
+  color:var(--muted);font-size:11px;font-weight:500;
+  min-height:30px;display:inline-flex;align-items:center;white-space:nowrap;
+  user-select:none;transition:all .15s;
+}
+.pill.active{border-color:transparent}
+.pill.att.active{background:var(--amber);color:#000}
+.pill.cafe.active{background:var(--green);color:#000}
+.pill.wifi.active{background:var(--blue);color:#fff}
+.pill:active{opacity:.72}
+
+/* ── RESULTS ── */
+#results{
+  flex:1;overflow-y:auto;padding:8px 10px 16px;
+  overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+}
+#results::-webkit-scrollbar{width:3px}
+#results::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.no-results{font-size:12px;color:var(--muted);padding:20px 4px;text-align:center}
+
+.result-card{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:11px;padding:11px 12px;margin-bottom:7px;
+  cursor:pointer;transition:border-color .15s,background .1s;
+  -webkit-user-select:none;user-select:none;
+}
+.result-card:active{background:var(--surface2)}
+.result-card.selected{border-color:var(--green)}
+.card-header{display:flex;align-items:flex-start;gap:9px}
+.card-icon{
+  width:34px;height:34px;border-radius:9px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:1px;
+}
+.card-icon.att{background:rgba(240,165,0,.15);color:var(--amber)}
+.card-icon.cafe{background:rgba(46,204,113,.12);color:var(--green)}
+.card-body{flex:1;min-width:0}
+.card-title{font-size:13px;font-weight:600;line-height:1.35}
+.card-sub{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
+.badge-row{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.badge{font-size:10px;padding:3px 7px;border-radius:8px;font-weight:500}
+.badge.wifi-yes{background:rgba(59,139,212,.22);color:#82b8e8}
+.badge.wifi-no{background:rgba(226,75,74,.18);color:#e88a89}
+.badge.wifi-unk{background:rgba(122,127,150,.18);color:var(--muted)}
+.badge.sock-yes{background:rgba(124,107,201,.22);color:#b0a5e0}
+.badge.dist{background:rgba(240,165,0,.18);color:#f0c050}
+.badge.type{background:rgba(46,204,113,.12);color:#68d68d}
+.badge.cat{background:rgba(59,139,212,.14);color:#82b8e8}
+.badge.open{background:rgba(46,204,113,.18);color:#68d68d}
+.badge.closed{background:rgba(226,75,74,.15);color:#e88a89}
+
+/* ── POPUP ── */
+.leaflet-popup-content-wrapper{
+  background:var(--surface)!important;color:var(--text)!important;
+  border:1px solid var(--border)!important;border-radius:14px!important;
+  box-shadow:0 8px 32px rgba(0,0,0,.55)!important;
+}
+.leaflet-popup-tip{background:var(--surface)!important}
+.leaflet-popup-content{margin:0!important;padding:0!important}
+.popup-inner{padding:14px 16px;min-width:200px;max-width:270px}
+.popup-title{font-size:14px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.popup-meta{font-size:11px;color:var(--muted);line-height:1.75;margin-bottom:6px}
+.popup-link{
+  display:inline-flex;align-items:center;gap:4px;margin-top:6px;
+  font-size:12px;color:var(--blue);padding:6px 12px;
+  border-radius:8px;border:1px solid var(--border);background:var(--bg);
+}
+.popup-nearby h4{font-size:9px;text-transform:uppercase;letter-spacing:.7px;
+  color:var(--muted);margin:10px 0 4px}
+.nearby-item{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;padding:7px 0;border-bottom:1px solid var(--border);
+  cursor:pointer;min-height:36px;
+}
+.nearby-item:last-child{border:none}
+.nearby-item:active{color:var(--green)}
+.nearby-dist{color:var(--muted);font-size:10px;flex-shrink:0;margin-left:8px}
+
+/* ── DROP OVERLAY ── */
+#drop-overlay{
+  position:fixed;inset:0;
+  top:calc(var(--topbar) + var(--safe-t));
+  z-index:9000;background:rgba(10,12,18,.96);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:14px;padding:16px;overflow-y:auto;
+}
+#drop-overlay.hidden{display:none}
+#drop-zone{
+  width:100%;max-width:460px;border:2px dashed var(--border);
+  border-radius:14px;padding:36px 24px;text-align:center;cursor:pointer;
+  transition:border-color .2s,background .2s;
+}
+#drop-zone.drag-over{border-color:var(--green);background:rgba(46,204,113,.06)}
+.dz-icon{font-size:42px;margin-bottom:14px}
+#dz-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:8px}
+#dz-desc{font-size:13px;color:var(--muted);line-height:1.7;white-space:pre-line}
+#file-input{display:none}
+#browse-btn{
+  margin-top:18px;display:inline-block;background:var(--green);
+  color:#000;font-weight:700;font-size:14px;padding:12px 28px;
+  border-radius:24px;border:none;min-height:44px;
+}
+#drop-error{color:var(--red);font-size:12px;margin-top:6px;min-height:18px}
+#demo-btn{
+  background:transparent;color:var(--muted);border:1px solid var(--border);
+  font-size:13px;padding:10px 22px;border-radius:24px;min-height:44px;
+}
+.step-hint{
+  width:100%;max-width:460px;background:var(--surface);
+  border:1px solid var(--border);border-radius:10px;padding:12px 16px;
+}
+.step-hint h3{font-size:10px;font-weight:700;color:var(--amber);
+  text-transform:uppercase;letter-spacing:.6px;margin-bottom:7px}
+.step-hint code{
+  display:block;background:var(--bg);border:1px solid var(--border);
+  border-radius:6px;padding:8px;font-size:10px;color:#a8e6cf;
+  font-family:monospace;line-height:1.8;white-space:pre;overflow-x:auto;
+}
+
+/* ══════════════════════════════════════
+   DESKTOP ≥ 680px
+══════════════════════════════════════ */
+@media(min-width:680px){
+  #topbar{left:var(--sidebar)}
+  #map{left:var(--sidebar)}
+  #sheet{
+    position:fixed;left:0;top:0;bottom:0;
+    width:var(--sidebar);border-radius:0;
+    transform:none!important;box-shadow:none;
+    border-right:1px solid var(--border);
+    max-height:100vh;padding-bottom:0;
+  }
+  #handle{display:none}
+  #sheet-head{padding:12px 14px 8px;border-bottom:1px solid var(--border)}
+  #fabs{bottom:16px}
+  .leaflet-bottom.leaflet-right{right:12px;bottom:56px}
+  .popup-inner{min-width:230px;max-width:300px}
+}
+
+/* ══════════════════════════════════════
+   MOBILE < 680px
+══════════════════════════════════════ */
+@media(max-width:679px){
+  .leaflet-bottom.leaflet-right{
+    right:10px;
+    bottom:calc(var(--peek) + var(--safe-b) + 52px);
+  }
+  .popup-inner{max-width:240px;padding:12px 14px}
+  .popup-title{font-size:13px}
+}
+
+/* ── LIGHT THEME ── */
+body.light{
+  --bg:#f2f3f7;--surface:#ffffff;--surface2:#eaecf3;
+  --border:#dde0e8;--text:#1a1c24;--muted:#747a96;
+}
+body.light .step-hint code{color:#1a6b3c}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <span id="topbar-title">🇧🇪 Leuven</span>
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="nl">NL</button>
+  <button class="lang-btn" data-lang="fr">FR</button>
+  <button class="lang-btn" data-lang="de">DE</button>
+  <button class="lang-btn" data-lang="zh">中文</button>
+  <span id="topbar-spacer"></span>
+  <button id="fab-theme" onclick="toggleTheme()">🌙</button>
+</div>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- FABs -->
+<div id="fabs">
+  <button class="fab" onclick="map&&map.setView([50.8798,4.7005],15)">⌖</button>
+</div>
+
+<!-- BOTTOM SHEET / SIDEBAR -->
+<div id="sheet">
+  <div id="handle"><div id="handle-pill"></div></div>
+
+  <div id="sheet-head">
+    <div>
+      <div id="sheet-title">Tourism &amp; Cafes</div>
+      <div id="sheet-meta">—</div>
+    </div>
+    <button id="reload-btn" onclick="showDrop()">⇅</button>
+  </div>
+
+  <div id="stats">
+    <div class="stat"><div class="num" id="s-att">—</div><div class="lbl" id="sl-att">Places</div></div>
+    <div class="stat"><div class="num" id="s-cafe">—</div><div class="lbl" id="sl-cafe">Cafes</div></div>
+    <div class="stat"><div class="num" id="s-wifi">—</div><div class="lbl" id="sl-wifi">WiFi</div></div>
+    <div class="stat"><div class="num" id="s-pair">—</div><div class="lbl" id="sl-pair">Pairs</div></div>
+  </div>
+
+  <div id="filters">
+    <div class="filter-row">
+      <div class="filter-label" id="fl-layers">Show</div>
+      <div class="pill-row">
+        <span class="pill att active" data-filter="layer-att"  id="pill-att">🏛 Attractions</span>
+        <span class="pill cafe active" data-filter="layer-cafe" id="pill-cafe">☕ Cafes</span>
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-label" id="fl-wifi">WiFi</div>
+      <div class="pill-row">
+        <span class="pill wifi active" data-filter="wifi-all"  id="pill-wall">All</span>
+        <span class="pill wifi"        data-filter="wifi-yes"  id="pill-wyes">WiFi ✓</span>
+        <span class="pill wifi"        data-filter="wifi-sock" id="pill-wsock">WiFi+Socket</span>
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-label" id="fl-type">Type</div>
+      <div class="pill-row">
+        <span class="pill att active" data-filter="cat-all"       id="pill-call">All</span>
+        <span class="pill att"        data-filter="cat-highlight"  id="pill-chigh">⭐ Highlights</span>
+        <span class="pill att"        data-filter="cat-university" id="pill-cuni">🎓 Uni</span>
+        <span class="pill att"        data-filter="cat-museum"     id="pill-cmus">🖼 Museum</span>
+        <span class="pill att"        data-filter="cat-religious"  id="pill-crel">⛪ Religious</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<!-- DROP OVERLAY -->
+<div id="drop-overlay" class="hidden"
+     ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+  <div id="drop-zone" onclick="document.getElementById('file-input').click()">
+    <div class="dz-icon">🗺️</div>
+    <div id="dz-title"></div>
+    <p id="dz-desc"></p>
+    <button id="browse-btn"
+      onclick="event.stopPropagation();document.getElementById('file-input').click()"></button>
+    <p id="drop-error"></p>
+  </div>
+  <input type="file" id="file-input" accept=".json" onchange="onFileSelect(event)">
+  <button id="demo-btn" onclick="loadDemo()"></button>
+  <div class="step-hint">
+    <h3 id="hint-title"></h3>
+    <code>python leuven_scraper_v3.py --google-key YOUR_KEY
+# → leuven_output/leuven_data.json</code>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script>
+/* i18n */
+const I18N={
+  en:{dzTitle:"Tourism & Cafe Map",dzDesc:"Run the scraper to generate leuven_data.json,\nthen drag it here or click to select.",dzBrowse:"Select leuven_data.json",dzDemo:"Preview with demo data",dzError_notJson:"Please select a .json file",dzError_invalid:"Invalid JSON: ",hintTitle:"How to generate leuven_data.json",sheetTitle:"Tourism & Cafes",flLayers:"Show",flWifi:"WiFi",flType:"Type",pillAtt:"🏛 Attractions",pillCafe:"☕ Cafes",pillWall:"All",pillWyes:"WiFi ✓",pillWsock:"WiFi+Socket",pillCall:"All",pillChigh:"⭐ Highlights",pillCuni:"🎓 Uni",pillCmus:"🖼 Museum",pillCrel:"⛪ Religious",slAtt:"Places",slCafe:"Cafes",slWifi:"WiFi",slPair:"Pairs",nearestCafes:"Nearest cafes",visitLeuven:"↗ Visit Leuven",googleMaps:"↗ Maps",wifiYes:"📶 WiFi",wifiNo:"✗ WiFi",wifiUnk:"WiFi?",sockYes:"🔌 Socket",open:"Open",closed:"Closed",cafeType:{cafe:"Cafe",bar:"Bar",coworking:"Cowork"},catLabel:{highlight:"Highlight",museum:"Museum",university:"University",religious:"Religious",green:"Park"},nearbyCount:n=>`${n} cafes nearby`,noResults:"No results for these filters.",metaLine:(a,c,d)=>`${a} places · ${c} cafes · ${d}`,},
+  nl:{dzTitle:"Toerisme & Café Kaart",dzDesc:"Voer de scraper uit voor leuven_data.json,\nsleep het hier of klik.",dzBrowse:"Selecteer leuven_data.json",dzDemo:"Voorbeelddata laden",dzError_notJson:"Selecteer een .json bestand",dzError_invalid:"Ongeldige JSON: ",hintTitle:"Hoe leuven_data.json genereren",sheetTitle:"Toerisme & Cafés",flLayers:"Tonen",flWifi:"WiFi",flType:"Type",pillAtt:"🏛 Beziensw.",pillCafe:"☕ Cafés",pillWall:"Alles",pillWyes:"WiFi ✓",pillWsock:"WiFi+Stopcontact",pillCall:"Alles",pillChigh:"⭐ Hoogtepunten",pillCuni:"🎓 Uni",pillCmus:"🖼 Museum",pillCrel:"⛪ Religieus",slAtt:"Locaties",slCafe:"Cafés",slWifi:"WiFi",slPair:"Koppels",nearestCafes:"Dichtstbijzijnde cafés",visitLeuven:"↗ Visit Leuven",googleMaps:"↗ Maps",wifiYes:"📶 WiFi",wifiNo:"✗ WiFi",wifiUnk:"WiFi?",sockYes:"🔌 Stopcontact",open:"Open",closed:"Gesloten",cafeType:{cafe:"Café",bar:"Bar",coworking:"Werkplek"},catLabel:{highlight:"Hoogtepunt",museum:"Museum",university:"Universiteit",religious:"Religieus",green:"Park"},nearbyCount:n=>`${n} cafés nabij`,noResults:"Geen resultaten voor deze filters.",metaLine:(a,c,d)=>`${a} locaties · ${c} cafés · ${d}`,},
+  fr:{dzTitle:"Carte Tourisme & Cafés",dzDesc:"Exécutez le scraper pour leuven_data.json,\npuis glissez-le ici ou cliquez.",dzBrowse:"Sélectionner leuven_data.json",dzDemo:"Données de démonstration",dzError_notJson:"Sélectionnez un fichier .json",dzError_invalid:"JSON invalide : ",hintTitle:"Comment générer leuven_data.json",sheetTitle:"Tourisme & Cafés",flLayers:"Afficher",flWifi:"WiFi",flType:"Type",pillAtt:"🏛 Sites",pillCafe:"☕ Cafés",pillWall:"Tous",pillWyes:"WiFi ✓",pillWsock:"WiFi+Prise",pillCall:"Tous",pillChigh:"⭐ Incontournables",pillCuni:"🎓 Uni",pillCmus:"🖼 Musée",pillCrel:"⛪ Religieux",slAtt:"Sites",slCafe:"Cafés",slWifi:"WiFi",slPair:"Paires",nearestCafes:"Cafés les plus proches",visitLeuven:"↗ Visit Leuven",googleMaps:"↗ Maps",wifiYes:"📶 WiFi",wifiNo:"✗ WiFi",wifiUnk:"WiFi?",sockYes:"🔌 Prise",open:"Ouvert",closed:"Fermé",cafeType:{cafe:"Café",bar:"Bar",coworking:"Espace de travail"},catLabel:{highlight:"Incontournable",museum:"Musée",university:"Université",religious:"Religieux",green:"Parc"},nearbyCount:n=>`${n} cafés à proximité`,noResults:"Aucun résultat pour ces filtres.",metaLine:(a,c,d)=>`${a} sites · ${c} cafés · ${d}`,},
+  de:{dzTitle:"Tourismus & Café Karte",dzDesc:"Scraper ausführen für leuven_data.json,\ndann hierher ziehen oder klicken.",dzBrowse:"leuven_data.json auswählen",dzDemo:"Demo-Daten laden",dzError_notJson:"Bitte eine .json Datei auswählen",dzError_invalid:"Ungültiges JSON: ",hintTitle:"So generiert man leuven_data.json",sheetTitle:"Tourismus & Cafés",flLayers:"Zeigen",flWifi:"WLAN",flType:"Typ",pillAtt:"🏛 Sehensw.",pillCafe:"☕ Cafés",pillWall:"Alle",pillWyes:"WLAN ✓",pillWsock:"WLAN+Steckdose",pillCall:"Alle",pillChigh:"⭐ Highlights",pillCuni:"🎓 Uni",pillCmus:"🖼 Museum",pillCrel:"⛪ Religiös",slAtt:"Orte",slCafe:"Cafés",slWifi:"WLAN",slPair:"Paare",nearestCafes:"Nächste Cafés",visitLeuven:"↗ Visit Leuven",googleMaps:"↗ Maps",wifiYes:"📶 WLAN",wifiNo:"✗ WLAN",wifiUnk:"WLAN?",sockYes:"🔌 Steckdose",open:"Geöffnet",closed:"Geschlossen",cafeType:{cafe:"Café",bar:"Bar",coworking:"Coworking"},catLabel:{highlight:"Highlight",museum:"Museum",university:"Universität",religious:"Religiös",green:"Park"},nearbyCount:n=>`${n} Cafés in der Nähe`,noResults:"Keine Ergebnisse für diese Filter.",metaLine:(a,c,d)=>`${a} Orte · ${c} Cafés · ${d}`,},
+  zh:{dzTitle:"魯汶觀光 & 咖啡地圖",dzDesc:"請先執行爬蟲生成 leuven_data.json，\n再拖放到此或點選。",dzBrowse:"選取 leuven_data.json",dzDemo:"使用 Demo 資料預覽",dzError_notJson:"請選取 .json 格式的檔案",dzError_invalid:"JSON 格式錯誤：",hintTitle:"如何生成 leuven_data.json",sheetTitle:"觀光 & 咖啡",flLayers:"圖層",flWifi:"WiFi",flType:"類型",pillAtt:"🏛 景點",pillCafe:"☕ 咖啡",pillWall:"全部",pillWyes:"WiFi ✓",pillWsock:"WiFi+插座",pillCall:"全部",pillChigh:"⭐ 必訪",pillCuni:"🎓 大學",pillCmus:"🖼 博物館",pillCrel:"⛪ 宗教",slAtt:"景點",slCafe:"咖啡店",slWifi:"WiFi",slPair:"配對",nearestCafes:"附近咖啡店",visitLeuven:"↗ Visit Leuven",googleMaps:"↗ 開啟地圖",wifiYes:"📶 WiFi",wifiNo:"✗ WiFi",wifiUnk:"WiFi?",sockYes:"🔌 插座",open:"營業中",closed:"已關閉",cafeType:{cafe:"咖啡館",bar:"酒吧",coworking:"共享空間"},catLabel:{highlight:"必訪",museum:"博物館",university:"大學",religious:"宗教",green:"公園"},nearbyCount:n=>`附近 ${n} 間`,noResults:"目前篩選條件下無結果。",metaLine:(a,c,d)=>`${a} 景點 · ${c} 咖啡 · ${d}`,},
+};
+
+/* state */
+let lang="en",T=I18N.en;
+let geoData=null,map=null,attLayer=null,cafeLayer=null,tileLayer=null;
+let allMarkers={},darkMode=true,mapReady=false;
+let filters={showAtt:true,showCafe:true,wifiMode:"all",catMode:"all"};
+const TILES={dark:"https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",light:"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"};
+const ATTR='&copy;<a href="https://www.openstreetmap.org">OSM</a>&copy;<a href="https://carto.com">CARTO</a>';
+
+/* ── bottom sheet drag ── */
+(function(){
+  const sheet=document.getElementById("sheet");
+  const handle=document.getElementById("handle");
+  const fabs=document.getElementById("fabs");
+  let y0=0,t0=0,dragging=false,vel=0,lastY=0,lastT=0;
+  const mob=()=>window.innerWidth<680;
+  function peekTY(){
+    const cs=getComputedStyle(document.documentElement);
+    const peek=parseInt(cs.getPropertyValue("--peek"))||156;
+    const safe=parseFloat(cs.getPropertyValue("--safe-b"))||0;
+    return sheet.offsetHeight-peek-safe;
+  }
+  function curTY(){const m=new DOMMatrix(getComputedStyle(sheet).transform);return isNaN(m.m42)?peekTY():m.m42;}
+  function setTY(y,a){
+    sheet.style.transition=a?"transform .32s cubic-bezier(.4,0,.2,1)":"none";
+    sheet.style.transform=`translateY(${y}px)`;
+    fabs.style.bottom=Math.max(16,sheet.offsetHeight-y+8)+"px";
+  }
+  function snap(y,v){
+    const pk=peekTY(),h=sheet.offsetHeight;
+    if(v<-350||y<pk*.35) setTY(0,true);
+    else if(v>350||y>pk*.7) setTY(pk,true);
+    else setTY(h*.38,true);
+  }
+  handle.addEventListener("touchstart",e=>{
+    if(!mob())return;
+    dragging=true;y0=e.touches[0].clientY;t0=curTY();
+    vel=0;lastY=y0;lastT=Date.now();sheet.style.transition="none";
+  },{passive:true});
+  document.addEventListener("touchmove",e=>{
+    if(!dragging)return;
+    const cy=e.touches[0].clientY,now=Date.now();
+    vel=(cy-lastY)/(now-lastT+1)*1000;lastY=cy;lastT=now;
+    const ny=Math.max(0,Math.min(peekTY(),t0+(cy-y0)));
+    sheet.style.transform=`translateY(${ny}px)`;
+    fabs.style.bottom=Math.max(16,sheet.offsetHeight-ny+8)+"px";
+  },{passive:true});
+  document.addEventListener("touchend",()=>{if(!dragging)return;dragging=false;snap(curTY(),vel);});
+  handle.addEventListener("click",()=>{if(!mob())return;setTY(curTY()<peekTY()*.45?peekTY():0,true);});
+  document.getElementById("map").addEventListener("touchstart",()=>{if(mob())setTY(peekTY(),true);},{passive:true});
+})();
+
+/* ── i18n ── */
+function applyLang(l){
+  lang=l;T=I18N[l];
+  document.documentElement.lang=l==="zh"?"zh-TW":l;
+  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));
+  const s=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v;};
+  s("dz-title",T.dzTitle);
+  const dz=document.getElementById("dz-desc");if(dz)dz.textContent=T.dzDesc;
+  s("browse-btn",T.dzBrowse);s("demo-btn",T.dzDemo);s("hint-title",T.hintTitle);
+  s("sheet-title",T.sheetTitle);
+  s("fl-layers",T.flLayers);s("fl-wifi",T.flWifi);s("fl-type",T.flType);
+  s("pill-att",T.pillAtt);s("pill-cafe",T.pillCafe);
+  s("pill-wall",T.pillWall);s("pill-wyes",T.pillWyes);s("pill-wsock",T.pillWsock);
+  s("pill-call",T.pillCall);s("pill-chigh",T.pillChigh);s("pill-cuni",T.pillCuni);
+  s("pill-cmus",T.pillCmus);s("pill-crel",T.pillCrel);
+  s("sl-att",T.slAtt);s("sl-cafe",T.slCafe);s("sl-wifi",T.slWifi);s("sl-pair",T.slPair);
+  if(geoData){rebuildPopups();applyFilters();}
+}
+document.querySelectorAll(".lang-btn").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
+
+/* ── helpers ── */
+const CE={highlight:"⭐",museum:"🖼",university:"🎓",religious:"⛪",green:"🌿"};
+const FE={cafe:"☕",bar:"🍺",coworking:"💻"};
+function locName(p){return(p.names&&p.names[lang])||p.name||"";}
+function locDesc(p){return(p.descriptions&&p.descriptions[lang])||p.description||"";}
+function wBadge(w){
+  return w==="yes"?`<span class="badge wifi-yes">${T.wifiYes}</span>`
+        :w==="no"?`<span class="badge wifi-no">${T.wifiNo}</span>`
+                :`<span class="badge wifi-unk">${T.wifiUnk}</span>`;
+}
+
+/* ── popups ── */
+function attPopup(p){
+  const nb=(p.nearby_cafes||[]).slice(0,4).map(c=>`
+    <div class="nearby-item" onclick="flyTo('${c.cafe_id}')">
+      <span>${c.name}${c.wifi==="yes"?" 📶":""}${c.socket==="yes"?" 🔌":""}</span>
+      <span class="nearby-dist">${c.distance_m}m</span>
+    </div>`).join("");
+  return`<div class="popup-inner">
+    <div class="popup-title">${locName(p)}</div>
+    <div class="popup-meta">${locDesc(p)}</div>
+    <div class="badge-row"><span class="badge cat">${T.catLabel[p.category]||p.category}</span></div>
+    ${nb?`<div class="popup-nearby"><h4>${T.nearestCafes}</h4>${nb}</div>`:""}
+    ${p.url?`<a class="popup-link" href="${p.url}" target="_blank">${T.visitLeuven}</a>`:""}
+  </div>`;
+}
+function cafePopup(p){
+  const ow=p.open_now==="yes"?`<span class="badge open">${T.open}</span>`
+           :p.open_now==="no"?`<span class="badge closed">${T.closed}</span>`:"";
+  const hrs=p.open_hr&&p.open_hr!=="N/A"?`<br>🕐 ${p.open_hr.split("|")[0].trim()}`:"";
+  const price=p.price_avg&&p.price_avg!=="unknown"?`<br>💶 ${p.price_avg}`:"";
+  return`<div class="popup-inner">
+    <div class="popup-title">${p.name}</div>
+    <div class="popup-meta">${p.address||""}${hrs}${price}</div>
+    <div class="badge-row">${ow}${wBadge(p.wifi)}${p.socket==="yes"?`<span class="badge sock-yes">${T.sockYes}</span>`:""}
+      <span class="badge type">${T.cafeType[p.cafe_type]||p.cafe_type}</span>
+      ${p.rating?`<span class="badge dist">★ ${p.rating}</span>`:""}
+    </div>
+    <a class="popup-link" href="${p.maps_url}" target="_blank">${T.googleMaps}</a>
+  </div>`;
+}
+function rebuildPopups(){
+  if(!geoData)return;
+  geoData.features.forEach(f=>{
+    const p=f.properties,m=allMarkers[p.id];if(!m)return;
+    if(p.feature_type==="attraction")m.setPopupContent(attPopup(p));
+    else m.setPopupContent(cafePopup(p));
+  });
+}
+
+/* ── cards ── */
+function attCard(p){
+  const n=locName(p),d=locDesc(p);
+  return`<div class="result-card" id="card-${p.id}" onclick="flyTo('${p.id}')">
+    <div class="card-header">
+      <div class="card-icon att">${CE[p.category]||"📍"}</div>
+      <div class="card-body">
+        <div class="card-title">${n}</div>
+        <div class="card-sub">${d.slice(0,60)}${d.length>60?"…":""}</div>
+      </div>
+    </div>
+    <div class="badge-row">
+      <span class="badge cat">${T.catLabel[p.category]||p.category}</span>
+      ${(p.nearby_cafes||[]).length?`<span class="badge dist">${T.nearbyCount(p.nearby_cafes.length)}</span>`:""}
+    </div>
+  </div>`;
+}
+function cafeCard(p){
+  const ow=p.open_now==="yes"?`<span class="badge open">${T.open}</span>`
+           :p.open_now==="no"?`<span class="badge closed">${T.closed}</span>`:"";
+  return`<div class="result-card" id="card-${p.id}" onclick="flyTo('${p.id}')">
+    <div class="card-header">
+      <div class="card-icon cafe">${FE[p.cafe_type]||"☕"}</div>
+      <div class="card-body">
+        <div class="card-title">${p.name}</div>
+        <div class="card-sub">${p.address||""}</div>
+      </div>
+    </div>
+    <div class="badge-row">${ow}${wBadge(p.wifi)}
+      ${p.socket==="yes"?`<span class="badge sock-yes">${T.sockYes}</span>`:""}
+      <span class="badge type">${T.cafeType[p.cafe_type]||p.cafe_type}</span>
+      ${p.rating?`<span class="badge dist">★ ${p.rating}</span>`:""}
+    </div>
+  </div>`;
+}
+
+/* ── flyTo ── */
+function flyTo(id){
+  const m=allMarkers[id];if(!m)return;
+  const mob=window.innerWidth<680;
+  map.flyTo(m.getLatLng(),17,{duration:.65});
+  setTimeout(()=>m.openPopup(),700);
+  if(mob){
+    const s=document.getElementById("sheet");
+    const pk=s.offsetHeight-parseInt(getComputedStyle(document.documentElement).getPropertyValue("--peek"))||156;
+    s.style.transition="transform .32s cubic-bezier(.4,0,.2,1)";
+    s.style.transform=`translateY(${pk}px)`;
+    document.getElementById("fabs").style.bottom="170px";
+  }
+  document.querySelectorAll(".result-card.selected").forEach(el=>el.classList.remove("selected"));
+  const card=document.getElementById("card-"+id);
+  if(card){card.classList.add("selected");card.scrollIntoView({block:"nearest",behavior:"smooth"});}
+}
+
+/* ── filters ── */
+function applyFilters(){
+  if(!geoData)return;
+  const list=document.getElementById("results");list.innerHTML="";
+  let ac=0,cc=0,wc=0;
+  geoData.features.forEach(f=>{
+    const p=f.properties,m=allMarkers[p.id];if(!m)return;
+    if(p.feature_type==="attraction"){
+      const ok=filters.showAtt&&(filters.catMode==="all"||p.category===filters.catMode);
+      ok?attLayer.addLayer(m):attLayer.removeLayer(m);
+      if(ok){ac++;list.innerHTML+=attCard(p);}
+    }else{
+      const wok=filters.wifiMode==="all"||(filters.wifiMode==="yes"&&p.wifi==="yes")||(filters.wifiMode==="sock"&&p.wifi==="yes"&&p.socket==="yes");
+      const ok=filters.showCafe&&wok;
+      ok?cafeLayer.addLayer(m):cafeLayer.removeLayer(m);
+      if(ok){cc++;if(p.wifi==="yes")wc++;list.innerHTML+=cafeCard(p);}
+    }
+  });
+  document.getElementById("s-att").textContent=ac;
+  document.getElementById("s-cafe").textContent=cc;
+  document.getElementById("s-wifi").textContent=wc;
+  if(ac+cc===0)list.innerHTML=`<p class="no-results">${T.noResults}</p>`;
+}
+document.querySelectorAll(".pill").forEach(pill=>{
+  pill.addEventListener("click",()=>{
+    const f=pill.dataset.filter;
+    if(f==="layer-att"){filters.showAtt=!filters.showAtt;pill.classList.toggle("active");}
+    if(f==="layer-cafe"){filters.showCafe=!filters.showCafe;pill.classList.toggle("active");}
+    if(f.startsWith("wifi-")){document.querySelectorAll(".pill[data-filter^='wifi-']").forEach(p=>p.classList.remove("active"));pill.classList.add("active");filters.wifiMode=f.replace("wifi-","");}
+    if(f.startsWith("cat-")){document.querySelectorAll(".pill[data-filter^='cat-']").forEach(p=>p.classList.remove("active"));pill.classList.add("active");filters.catMode=f.replace("cat-","");}
+    applyFilters();
+  });
+});
+
+/* ── theme ── */
+function toggleTheme(){
+  darkMode=!darkMode;
+  document.body.classList.toggle("light",!darkMode);
+  document.getElementById("fab-theme").textContent=darkMode?"🌙":"☀️";
+  document.querySelector('meta[name="theme-color"]').content=darkMode?"#0f1117":"#f2f3f7";
+  if(tileLayer)map.removeLayer(tileLayer);
+  tileLayer=L.tileLayer(darkMode?TILES.dark:TILES.light,{attribution:ATTR,maxZoom:19}).addTo(map);
+}
+
+/* ── drop/file ── */
+function onDragOver(e){e.preventDefault();document.getElementById("drop-zone").classList.add("drag-over");}
+function onDragLeave(){document.getElementById("drop-zone").classList.remove("drag-over");}
+function onDrop(e){e.preventDefault();document.getElementById("drop-zone").classList.remove("drag-over");const f=e.dataTransfer?.files?.[0];if(f)readFile(f);}
+function onFileSelect(e){const f=e.target.files?.[0];if(f)readFile(f);}
+function readFile(file){
+  if(!file.name.endsWith(".json")){document.getElementById("drop-error").textContent=T.dzError_notJson;return;}
+  document.getElementById("drop-error").textContent="";
+  const r=new FileReader();
+  r.onload=ev=>{try{const d=JSON.parse(ev.target.result);if(!d.features)throw new Error("No features");initMap(d);}
+    catch(err){document.getElementById("drop-error").textContent=T.dzError_invalid+err.message;}};
+  r.readAsText(file);
+}
+function showDrop(){document.getElementById("drop-overlay").classList.remove("hidden");}
+function loadDemo(){initMap(DEMO_DATA);}
+
+/* ── icons ── */
+function mkIcon(e,bg,sz){
+  return L.divIcon({className:"",
+    html:`<div style="width:${sz}px;height:${sz}px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:${bg};border:2px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.45)"><span style="transform:rotate(45deg);font-size:${sz*.44}px;line-height:1">${e}</span></div>`,
+    iconSize:[sz,sz],iconAnchor:[sz/2,sz],popupAnchor:[0,-sz+4]
+  });
+}
+const IATT=cat=>mkIcon(CE[cat]||"📍","#f0a500",36);
+const ICAFE=(type,wifi)=>mkIcon(FE[type]||"☕",wifi==="yes"?"#3b8bd4":"#2ecc71",28);
+
+/* ── init map ── */
+function initMap(data){
+  geoData=data;
+  document.getElementById("drop-overlay").classList.add("hidden");
+  if(!mapReady){
+    map=L.map("map",{center:[50.8798,4.7005],zoom:15,zoomControl:false,tap:true,tapTolerance:15});
+    L.control.zoom({position:"bottomright"}).addTo(map);
+    tileLayer=L.tileLayer(TILES.dark,{attribution:ATTR,maxZoom:19}).addTo(map);
+    mapReady=true;
+  }
+  if(attLayer)map.removeLayer(attLayer);
+  if(cafeLayer)map.removeLayer(cafeLayer);
+  allMarkers={};
+  const ci=(col,sz)=>c=>L.divIcon({
+    html:`<div style="background:${col};color:#000;width:${sz}px;height:${sz}px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:${sz*.4}px;box-shadow:0 2px 8px rgba(0,0,0,.45)">${c.getChildCount()}</div>`,
+    iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]
+  });
+  attLayer=L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,iconCreateFunction:ci("#f0a500",34)});
+  cafeLayer=L.markerClusterGroup({maxClusterRadius:44,showCoverageOnHover:false,iconCreateFunction:ci("#2ecc71",30)});
+  data.features.forEach(f=>{
+    const p=f.properties,[lon,lat]=f.geometry.coordinates;
+    if(!lat||!lon)return;
+    let m;
+    if(p.feature_type==="attraction"){
+      m=L.marker([lat,lon],{icon:IATT(p.category)}).bindPopup(attPopup(p),{maxWidth:300,autoPan:true});
+      attLayer.addLayer(m);
+    }else{
+      m=L.marker([lat,lon],{icon:ICAFE(p.cafe_type,p.wifi)}).bindPopup(cafePopup(p),{maxWidth:280,autoPan:true});
+      cafeLayer.addLayer(m);
+    }
+    allMarkers[p.id]=m;
+  });
+  map.addLayer(attLayer);map.addLayer(cafeLayer);
+  const meta=data.metadata||{};
+  document.getElementById("s-pair").textContent=meta.pairs||"—";
+  document.getElementById("sheet-meta").textContent=T.metaLine(meta.attractions||0,meta.cafes||0,(meta.generated||"").slice(0,10)||"demo");
+  setTimeout(()=>map.invalidateSize(),120);
+  applyFilters();
+}
+
+/* ── demo data ── */
+const DEMO_DATA={type:"FeatureCollection",metadata:{generated:new Date().toISOString(),attractions:7,cafes:5,pairs:12,languages:["en","nl","fr","de","zh"],source:"demo"},features:[
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7006,50.8799]},properties:{feature_type:"attraction",id:"ATT_001",name:"Stadhuis & Grote Markt",names:{en:"Stadhuis & Grote Markt",nl:"Stadhuis & Grote Markt",fr:"Hôtel de ville & Grande Place",de:"Rathaus & Großer Markt",zh:"市政廳與大廣場"},category:"highlight",description:"Gothic town hall.",descriptions:{en:"One of Belgium's finest Gothic town halls, overlooking the vibrant main square.",nl:"Een van de mooiste gotische stadhizen van België.",fr:"L'un des plus beaux hôtels de ville gothiques de Belgique.",de:"Eines der schönsten gotischen Rathäuser Belgiens.",zh:"比利時最精美的哥德式市政廳之一，坐落於熱鬧的市中心廣場。"},url:"https://www.visitleuven.be/stadhuis",nearby_cafes:[{cafe_id:"CAF_001",name:"Grand Café",distance_m:80,wifi:"yes",socket:"yes",maps_url:"#"},{cafe_id:"CAF_002",name:"Café Belge",distance_m:145,wifi:"unknown",socket:"unknown",maps_url:"#"}]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7038,50.8790]},properties:{feature_type:"attraction",id:"ATT_002",name:"Oude Markt",names:{en:"Oude Markt",nl:"Oude Markt",fr:"Vieux Marché",de:"Alter Markt",zh:"舊市場廣場"},category:"highlight",description:"Europe's longest bar.",descriptions:{en:"Europe's longest bar: over 40 cafes packed into one lively square.",nl:"Europa's langste toog: meer dan 40 cafés op één plein.",fr:"Le plus long bar d'Europe : plus de 40 cafés sur une place.",de:"Europas längste Theke: über 40 Cafés auf einem Platz.",zh:"歐洲最長的酒吧街，超過40間咖啡館匯聚。"},url:"https://www.visitleuven.be/oude-markt",nearby_cafes:[{cafe_id:"CAF_004",name:"Oude Markt Bar",distance_m:30,wifi:"unknown",socket:"no",maps_url:"#"}]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7024,50.8779]},properties:{feature_type:"attraction",id:"ATT_003",name:"Universiteitsbibliotheek",names:{en:"University Library & Tower",nl:"Universiteitsbibliotheek",fr:"Bibliothèque universitaire",de:"Universitätsbibliothek",zh:"魯汶大學圖書館與鐘樓"},category:"university",description:"KU Leuven's iconic library.",descriptions:{en:"KU Leuven's iconic library tower, rebuilt after WWI with US donations.",nl:"De iconische bibliotheektoren van KU Leuven.",fr:"La tour emblématique de la bibliothèque de KU Leuven.",de:"Der ikonische Bibliotheksturm der KU Leuven.",zh:"魯汶大學標誌性圖書館塔樓，一戰後由美國捐款重建。"},url:"https://www.visitleuven.be/universiteitsbibliotheek-toren",nearby_cafes:[{cafe_id:"CAF_003",name:"Study Café KUL",distance_m:180,wifi:"yes",socket:"yes",maps_url:"#"}]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.6971,50.8736]},properties:{feature_type:"attraction",id:"ATT_004",name:"Groot Begijnhof",names:{en:"Groot Begijnhof",nl:"Groot Begijnhof",fr:"Grand Béguinage",de:"Großes Beginenhof",zh:"大貝居安院"},category:"religious",description:"UNESCO World Heritage.",descriptions:{en:"UNESCO World Heritage beguinage — a perfectly preserved medieval village.",nl:"UNESCO Werelderfgoed begijnhof.",fr:"Béguinage classé au patrimoine mondial de l'UNESCO.",de:"UNESCO-Weltkulturerbe — ein mittelalterliches Dorf.",zh:"聯合國教科文組織世界遺產，保存完好的中世紀圍牆村落。"},url:"https://www.visitleuven.be/groot-begijnhof",nearby_cafes:[]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.6991,50.8773]},properties:{feature_type:"attraction",id:"ATT_005",name:"M Leuven",names:{en:"M Leuven",nl:"M Leuven",fr:"M Leuven",de:"M Leuven",zh:"魯汶市立博物館"},category:"museum",description:"City museum.",descriptions:{en:"Leuven's city museum — art and history, including Roger van der Weyden.",nl:"Het stadsmuseum van Leuven met kunst en geschiedenis.",fr:"Le musée municipal — art et histoire.",de:"Leuven's Stadtmuseum mit Kunst und Geschichte.",zh:"魯汶市立博物館，館藏橫跨藝術與歷史。"},url:"https://www.visitleuven.be/mleuven",nearby_cafes:[{cafe_id:"CAF_001",name:"Grand Café",distance_m:220,wifi:"yes",socket:"yes",maps_url:"#"}]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7082,50.8857]},properties:{feature_type:"attraction",id:"ATT_006",name:"Vaartkom",names:{en:"Vaartkom",nl:"Vaartkom",fr:"Vaartkom",de:"Vaartkom",zh:"運河區 Vaartkom"},category:"highlight",description:"Hip canal district.",descriptions:{en:"Former industrial canal district, now a hip hub of restaurants.",nl:"Voormalige kanaalwijk, nu een trendy hotspot.",fr:"Quartier branché au bord du canal.",de:"Trendiges Kanalviertel mit Restaurants.",zh:"前工業運河區，現為充滿活力的餐廳酒吧聚集地。"},url:"https://www.visitleuven.be/vaartkom",nearby_cafes:[]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.6782,50.8647]},properties:{feature_type:"attraction",id:"ATT_007",name:"Arenbergkasteel",names:{en:"Arenberg Castle & Park",nl:"Arenbergkasteel & -park",fr:"Château d'Arenberg",de:"Arenberg-Schloss",zh:"阿倫貝格城堡與公園"},category:"university",description:"Neo-Gothic castle.",descriptions:{en:"A neo-Gothic castle in a beautiful park, home to KU Leuven engineering.",nl:"Een neogotisch kasteel in een prachtig park.",fr:"Un château néo-gothique dans un beau parc.",de:"Neugotisches Schloss in einem schönen Park.",zh:"新哥德式城堡坐落於美麗公園中，現為魯汶大學工學院。"},url:"https://www.visitleuven.be/arenbergkasteel-park",nearby_cafes:[]}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7009,50.8792]},properties:{feature_type:"cafe",id:"CAF_001",name:"Grand Café (demo)",cafe_type:"cafe",address:"Grote Markt 5, Leuven",open_hr:"Mo-Su 08:00–22:00",open_now:"yes",wifi:"yes",socket:"yes",price_avg:"€€",rating:4.3,quite:"unknown",maps_url:"https://www.google.com/maps?q=50.8792,4.7009"}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7015,50.8785]},properties:{feature_type:"cafe",id:"CAF_002",name:"Café Belge (demo)",cafe_type:"cafe",address:"Naamsestraat 12, Leuven",open_hr:"Mo-Fr 09:00–18:00",open_now:"no",wifi:"unknown",socket:"unknown",price_avg:"€",rating:3.8,quite:"unknown",maps_url:"https://www.google.com/maps?q=50.8785,4.7015"}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.6985,50.8760]},properties:{feature_type:"cafe",id:"CAF_003",name:"Study Café KUL (demo)",cafe_type:"coworking",address:"Naamsestraat 63, Leuven",open_hr:"Mo-Fr 08:00–20:00",open_now:"yes",wifi:"yes",socket:"yes",price_avg:"€€",rating:4.6,quite:"yes",maps_url:"https://www.google.com/maps?q=50.8760,4.6985"}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7045,50.8788]},properties:{feature_type:"cafe",id:"CAF_004",name:"Oude Markt Bar (demo)",cafe_type:"bar",address:"Oude Markt 22, Leuven",open_hr:"Mo-Su 10:00–03:00",open_now:"yes",wifi:"unknown",socket:"no",price_avg:"€€",rating:4.1,quite:"unknown",maps_url:"https://www.google.com/maps?q=50.8788,4.7045"}},
+  {type:"Feature",geometry:{type:"Point",coordinates:[4.7000,50.8800]},properties:{feature_type:"cafe",id:"CAF_005",name:"Koffie & Co (demo)",cafe_type:"cafe",address:"Bondgenotenlaan 8, Leuven",open_hr:"Mo-Sa 07:30–19:00",open_now:"no",wifi:"yes",socket:"yes",price_avg:"€€",rating:4.4,quite:"unknown",maps_url:"https://www.google.com/maps?q=50.8800,4.7000"}},
+]};
+
+/* ── startup ── */
+async function autoLoad(){
+  const bl=(navigator.language||"en").toLowerCase();
+  const lm={"nl":"nl","fr":"fr","de":"de","zh":"zh","zh-tw":"zh","zh-hant":"zh","zh-hans":"zh"};
+  applyLang(lm[bl]||lm[bl.slice(0,2)]||"en");
+  document.getElementById("drop-overlay").classList.add("hidden");
+  try{
+    const r=await fetch("leuven_data.json");
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const d=await r.json();
+    if(!d.features)throw new Error("invalid GeoJSON");
+    initMap(d);console.info("✅ leuven_data.json loaded");
+  }catch(e){console.info("ℹ️ Demo mode:",e.message);initMap(DEMO_DATA);}
+}
+autoLoad();
+</script>
+</body>
+</html>
