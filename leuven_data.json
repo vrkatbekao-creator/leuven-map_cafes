@@ -1,0 +1,4567 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": "2026-03-29T10:42:29Z",
+    "city": "Leuven, Belgium",
+    "attractions": 17,
+    "cafes": 110,
+    "pairs": 71,
+    "languages": [
+      "en",
+      "nl",
+      "fr",
+      "de",
+      "zh"
+    ],
+    "source": "Google Places API + OSM Overpass"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7006,
+          50.8799
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_001",
+        "name": "Stadhuis & Grote Markt",
+        "names": {
+          "en": "Stadhuis & Grote Markt",
+          "nl": "Stadhuis & Grote Markt",
+          "fr": "Hôtel de ville & Grande Place",
+          "de": "Rathaus & Großer Markt",
+          "zh": "市政廳與大廣場"
+        },
+        "category": "highlight",
+        "description": "One of Belgium's finest Gothic town halls, overlooking the vibrant main square.",
+        "descriptions": {
+          "en": "One of Belgium's finest Gothic town halls, overlooking the vibrant main square.",
+          "nl": "Een van de mooiste gotische stadhizen van België, aan het bruisende Grote Markt.",
+          "fr": "L'un des plus beaux hôtels de ville gothiques de Belgique, sur la place centrale.",
+          "de": "Eines der schönsten gotischen Rathäuser Belgiens am lebhaften Hauptplatz.",
+          "zh": "比利時最精美的哥德式市政廳之一，坐落於熱鬧的市中心廣場。"
+        },
+        "url": "https://www.visitleuven.be/stadhuis",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 167.3,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 356.0,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 121.7,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 219.0,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJU_RXARthwU",
+            "name": "Dokteur",
+            "distance_m": 31.5,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.3,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU_RXARthwUcRvQhtkBphKLg",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7038,
+          50.879
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_002",
+        "name": "Oude Markt",
+        "names": {
+          "en": "Oude Markt",
+          "nl": "Oude Markt",
+          "fr": "Vieux Marché",
+          "de": "Alter Markt",
+          "zh": "舊市場廣場"
+        },
+        "category": "highlight",
+        "description": "Europe's longest bar: over 40 cafes and bars packed into one lively square.",
+        "descriptions": {
+          "en": "Europe's longest bar: over 40 cafes and bars packed into one lively square.",
+          "nl": "Europa's langste toog: meer dan 40 cafés en bars op één bruisend plein.",
+          "fr": "Le plus long bar d'Europe : plus de 40 cafés et bars sur une seule place animée.",
+          "de": "Europas längste Theke: über 40 Cafés und Bars auf einem einzigen lebhaften Platz.",
+          "zh": "歐洲最長的酒吧街：超過40間咖啡館與酒吧匯聚於一個熱鬧廣場。"
+        },
+        "url": "https://www.visitleuven.be/oude-markt",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 405.7,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 340.8,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 288.4,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 339.0,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJK3VcJz1hwU",
+            "name": "Barbóék in M 📚",
+            "distance_m": 22.0,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJK3VcJz1hwUcRYx38-2G4Ie8",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7082,
+          50.8857
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_003",
+        "name": "Vaartkom",
+        "names": {
+          "en": "Vaartkom",
+          "nl": "Vaartkom",
+          "fr": "Vaartkom",
+          "de": "Vaartkom",
+          "zh": "運河區 Vaartkom"
+        },
+        "category": "highlight",
+        "description": "Former industrial canal district transformed into a hip hub of restaurants and bars.",
+        "descriptions": {
+          "en": "Former industrial canal district transformed into a hip hub of restaurants and bars.",
+          "nl": "Voormalige industriële kanaalwijk, nu een trendy hotspot met restaurants en bars.",
+          "fr": "Ancien quartier industriel au bord du canal, devenu un lieu branché de restaurants.",
+          "de": "Ehemaliges Industriekanalviertel, heute trendiger Hotspot mit Restaurants und Bars.",
+          "zh": "前工業運河區，如今搖身一變為充滿活力的餐廳與酒吧聚集地。"
+        },
+        "url": "https://www.visitleuven.be/vaartkom",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJTRDM_dNgwU",
+            "name": "MOK COFFEE",
+            "distance_m": 480.7,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.5,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTRDM_dNgwUcR3KMSzhp1ys0",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6991,
+          50.8773
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_004",
+        "name": "M Leuven",
+        "names": {
+          "en": "M Leuven",
+          "nl": "M Leuven",
+          "fr": "M Leuven",
+          "de": "M Leuven",
+          "zh": "魯汶市立博物館 M"
+        },
+        "category": "museum",
+        "description": "Leuven's city museum spanning art and history, including Roger van der Weyden masterworks.",
+        "descriptions": {
+          "en": "Leuven's city museum spanning art and history, including Roger van der Weyden masterworks.",
+          "nl": "Het stadsmuseum van Leuven met kunst en geschiedenis, inclusief werken van Van der Weyden.",
+          "fr": "Le musée municipal de Louvain, de l'art et de l'histoire, avec des œuvres de Van der Weyden.",
+          "de": "Leuven's Stadtmuseum mit Kunst und Geschichte, u.a. Werke von Roger van der Weyden.",
+          "zh": "魯汶市立博物館，館藏橫跨藝術與歷史，收有羅希爾·范德魏登名作。"
+        },
+        "url": "https://www.visitleuven.be/mleuven",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 301.0,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 124.2,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 94.9,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 429.2,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJxSdDV9hgwU",
+            "name": "De Affiche Leuven",
+            "distance_m": 40.7,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": "",
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxSdDV9hgwUcR8gmeDcMqZzw",
+            "cafe_type": "cafe",
+            "open_now": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7009,
+          50.8792
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_005",
+        "name": "Sint-Pieterskerk",
+        "names": {
+          "en": "Sint-Pieterskerk",
+          "nl": "Sint-Pieterskerk",
+          "fr": "Église Saint-Pierre",
+          "de": "St.-Peterskirche",
+          "zh": "聖彼得教堂"
+        },
+        "category": "museum",
+        "description": "Gothic church on the Grote Markt, housing Dieric Bouts' acclaimed triptych altarpiece.",
+        "descriptions": {
+          "en": "Gothic church on the Grote Markt, housing Dieric Bouts' acclaimed triptych altarpiece.",
+          "nl": "Gotische kerk aan de Grote Markt met het beroemde drieluik van Dieric Bouts.",
+          "fr": "Église gothique abritant le célèbre triptyque de Thierry Bouts.",
+          "de": "Gotische Kirche mit dem berühmten Triptychon von Dieric Bouts.",
+          "zh": "坐落於大廣場的哥德式教堂，珍藏迪爾克·鮑茨的三聯祭壇畫傑作。"
+        },
+        "url": "https://www.visitleuven.be/sint-pieterskerk",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 205.9,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 279.0,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 168.8,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 195.0,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJ9287t9lgwU",
+            "name": "Resto Café Agora",
+            "distance_m": 10.6,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.1,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9287t9lgwUcRTjj34qN8TUQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6935,
+          50.8752
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_006",
+        "name": "PARCUM",
+        "names": {
+          "en": "PARCUM",
+          "nl": "PARCUM",
+          "fr": "PARCUM",
+          "de": "PARCUM",
+          "zh": "宗教藝術博物館 PARCUM"
+        },
+        "category": "museum",
+        "description": "Museum of religious art and culture with an exceptional collection of sacred objects.",
+        "descriptions": {
+          "en": "Museum of religious art and culture with an exceptional collection of sacred objects.",
+          "nl": "Museum voor religieuze kunst en cultuur met een uitzonderlijke collectie sacrale objecten.",
+          "fr": "Musée d'art et de culture religieux avec une collection exceptionnelle d'objets sacrés.",
+          "de": "Museum für religiöse Kunst und Kultur mit einer außergewöhnlichen Sammlung sakraler Objekte.",
+          "zh": "宗教藝術與文化博物館，典藏豐富的宗教聖物與藝術珍品。"
+        },
+        "url": "https://www.visitleuven.be/parcum",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJG_xRcR9hwU",
+            "name": "TotalEnergies",
+            "distance_m": 423.4,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG_xRcR9hwUcRhEJjlLebc4w",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJZx2w8dhgwU",
+            "name": "BAR MADRID",
+            "distance_m": 439.8,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZx2w8dhgwUcRhudnWCU9xbA",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJCyClU9hgwU",
+            "name": "Café Manger",
+            "distance_m": 454.2,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCyClU9hgwUcRKV5qqPtrEsk",
+            "cafe_type": "bar",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJxSdDV9hgwU",
+            "name": "De Affiche Leuven",
+            "distance_m": 456.2,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": "",
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxSdDV9hgwUcR8gmeDcMqZzw",
+            "cafe_type": "cafe",
+            "open_now": "unknown"
+          },
+          {
+            "cafe_id": "GP_ChIJTzPFSyZhwU",
+            "name": "STUK Arts Center vzw",
+            "distance_m": 461.2,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTzPFSyZhwUcRk5baE8-7U2g",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6971,
+          50.8736
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_007",
+        "name": "Groot Begijnhof",
+        "names": {
+          "en": "Groot Begijnhof",
+          "nl": "Groot Begijnhof",
+          "fr": "Grand Béguinage",
+          "de": "Großes Beginenhof",
+          "zh": "大貝居安院"
+        },
+        "category": "religious",
+        "description": "UNESCO World Heritage beguinage — a perfectly preserved medieval walled village within the city.",
+        "descriptions": {
+          "en": "UNESCO World Heritage beguinage — a perfectly preserved medieval walled village within the city.",
+          "nl": "UNESCO Werelderfgoed begijnhof — een perfect bewaard middeleeuws dorp binnen de stad.",
+          "fr": "Béguinage classé au patrimoine mondial de l'UNESCO — village médiéval intact au cœur de la ville.",
+          "de": "UNESCO-Weltkulturerbe — ein perfekt erhaltenes mittelalterliches Dorf in der Stadt.",
+          "zh": "聯合國教科文組織世界遺產，城市中保存完好的中世紀圍牆村落。"
+        },
+        "url": "https://www.visitleuven.be/groot-begijnhof",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 422.8,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJTzPFSyZhwU",
+            "name": "STUK Arts Center vzw",
+            "distance_m": 184.0,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTzPFSyZhwUcRk5baE8-7U2g",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJzXxbgShhwU",
+            "name": "Downtown Jack",
+            "distance_m": 343.7,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.5,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzXxbgShhwUcRckNGmnR0ySU",
+            "cafe_type": "bar",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJycH8bCRhwU",
+            "name": "'t ElixIr",
+            "distance_m": 430.8,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJycH8bCRhwUcR5vhzmA7vRJY",
+            "cafe_type": "bar",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJCyClU9hgwU",
+            "name": "Café Manger",
+            "distance_m": 459.0,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCyClU9hgwUcRKV5qqPtrEsk",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7082,
+          50.8825
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_008",
+        "name": "Klein Begijnhof",
+        "names": {
+          "en": "Klein Begijnhof",
+          "nl": "Klein Begijnhof",
+          "fr": "Petit Béguinage",
+          "de": "Kleines Beginenhof",
+          "zh": "小貝居安院"
+        },
+        "category": "religious",
+        "description": "A smaller, quieter beguinage north of the city centre, less visited and more tranquil.",
+        "descriptions": {
+          "en": "A smaller, quieter beguinage north of the city centre, less visited and more tranquil.",
+          "nl": "Een kleiner, rustiger begijnhof ten noorden van het stadscentrum, minder bezocht.",
+          "fr": "Un béguinage plus petit et tranquille au nord du centre-ville, moins fréquenté.",
+          "de": "Ein kleinerer, ruhigerer Beginenhof nördlich des Stadtzentrums, weniger besucht.",
+          "zh": "位於市中心北側的小型貝居安院，訪客較少，環境清幽。"
+        },
+        "url": "https://www.visitleuven.be/klein-begijnhof",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJTRDM_dNgwU",
+            "name": "MOK COFFEE",
+            "distance_m": 152.4,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.5,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTRDM_dNgwUcR3KMSzhp1ys0",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJTx8fUtdgwU",
+            "name": "Van de Velde Stadscafe",
+            "distance_m": 400.1,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.5,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTx8fUtdgwUcR0e63SUuydbU",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJJ85HRdNgwU",
+            "name": "Grand Café Industrie",
+            "distance_m": 428.2,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 3.9,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ85HRdNgwUcRAyMxkubMuTM",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ8aEyQtNgwU",
+            "name": "Den Ouden Tijd",
+            "distance_m": 436.3,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8aEyQtNgwUcR6WdY0TphPx4",
+            "cafe_type": "bar",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJI7RpbNdgwU",
+            "name": "Punto Caffè",
+            "distance_m": 441.5,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.3,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI7RpbNdgwUcRjfcZ4f8Tvhg",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6895,
+          50.8506
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_009",
+        "name": "Abdij van Park",
+        "names": {
+          "en": "Abdij van Park",
+          "nl": "Abdij van Park",
+          "fr": "Abbaye du Parc",
+          "de": "Abtei von Park",
+          "zh": "帕克修道院"
+        },
+        "category": "religious",
+        "description": "A 12th-century Norbertine abbey with a working farm, brewery, and stunning gardens.",
+        "descriptions": {
+          "en": "A 12th-century Norbertine abbey with a working farm, brewery, and stunning gardens.",
+          "nl": "Een 12e-eeuwse norbertijnerabdij met een werkende hoeve, brouwerij en prachtige tuinen.",
+          "fr": "Abbaye norbertine du XIIe siècle avec ferme active, brasserie et magnifiques jardins.",
+          "de": "Eine Norbertiner-Abtei aus dem 12. Jahrhundert mit Bauernhof, Brauerei und Gärten.",
+          "zh": "12世紀諾伯特修道院，設有運作中的農場、釀酒廠與精美庭園。"
+        },
+        "url": "https://www.visitleuven.be/abdij-van-park-0",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.694,
+          50.883
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_010",
+        "name": "Abdij Keizersberg",
+        "names": {
+          "en": "Abdij Keizersberg",
+          "nl": "Abdij Keizersberg",
+          "fr": "Abbaye du Mont César",
+          "de": "Abtei Keizersberg",
+          "zh": "凱澤斯貝格修道院"
+        },
+        "category": "religious",
+        "description": "Benedictine abbey perched on a hill with peaceful gardens overlooking the city.",
+        "descriptions": {
+          "en": "Benedictine abbey perched on a hill with peaceful gardens overlooking the city.",
+          "nl": "Benedictijnenabdij op een heuvel met rustige tuinen en uitzicht over de stad.",
+          "fr": "Abbaye bénédictine sur une colline avec des jardins paisibles dominant la ville.",
+          "de": "Benediktinerabtei auf einem Hügel mit ruhigen Gärten und Blick über die Stadt.",
+          "zh": "本篤會修道院，建於山丘之上，庭園清幽，可俯瞰整座城市。"
+        },
+        "url": "https://www.visitleuven.be/abdij-keizersberg",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 450.1,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJWQT-aN5gwU",
+            "name": "Bar Berlin",
+            "distance_m": 271.9,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQT-aN5gwUcRDvqzEtFxSY4",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUVz0Y95gwU",
+            "name": "Zonnekompas",
+            "distance_m": 257.4,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 3,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUVz0Y95gwUcRaPCgBn8d_Vc",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJRX5hbvlhwU",
+            "name": "BARBUZZ",
+            "distance_m": 365.4,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 3.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRX5hbvlhwUcRS4r3_F1ASeo",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJSVS-M-dgwU",
+            "name": "Doc's Bar (fakbar Medica)",
+            "distance_m": 400.0,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSVS-M-dgwUcRwy39M7P2Uxc",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7024,
+          50.8779
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_011",
+        "name": "Universiteitsbibliotheek",
+        "names": {
+          "en": "University Library & Tower",
+          "nl": "Universiteitsbibliotheek & -toren",
+          "fr": "Bibliothèque universitaire & tour",
+          "de": "Universitätsbibliothek & Turm",
+          "zh": "魯汶大學圖書館與鐘樓"
+        },
+        "category": "university",
+        "description": "KU Leuven's iconic library tower, rebuilt after WWI destruction with donations from the USA.",
+        "descriptions": {
+          "en": "KU Leuven's iconic library tower, rebuilt after WWI destruction with donations from the USA.",
+          "nl": "De iconische bibliotheektoren van KU Leuven, herbouwd na WO I met Amerikaanse giften.",
+          "fr": "La tour emblématique de la bibliothèque de KU Leuven, reconstruite après la Première Guerre mondiale.",
+          "de": "Der ikonische Bibliotheksturm der KU Leuven, nach dem Ersten Weltkrieg mit US-Spenden wiederaufgebaut.",
+          "zh": "魯汶大學標誌性圖書館塔樓，一戰後由美國捐款重建，是城市的精神象徵。"
+        },
+        "url": "https://www.visitleuven.be/universiteitsbibliotheek-toren",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 371.6,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 184.2,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 229.1,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 351.4,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJ8Q7PiddgwU",
+            "name": "Café De Libertad",
+            "distance_m": 20.6,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8Q7PiddgwUcRPEFXnu0edQw",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7018,
+          50.8794
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_012",
+        "name": "Universiteitshal",
+        "names": {
+          "en": "Universiteitshal",
+          "nl": "Universiteitshal",
+          "fr": "Halles universitaires",
+          "de": "Universitätshalle",
+          "zh": "大學禮堂"
+        },
+        "category": "university",
+        "description": "The grand ceremonial hall of KU Leuven, a symbol of the university's centuries of history.",
+        "descriptions": {
+          "en": "The grand ceremonial hall of KU Leuven, a symbol of the university's centuries of history.",
+          "nl": "De grootse ceremoniezaal van KU Leuven, symbool van de eeuwenlange universiteitsgeschiedenis.",
+          "fr": "La grande salle cérémonielle de KU Leuven, symbole des siècles d'histoire universitaire.",
+          "de": "Die feierliche Haupthalle der KU Leuven, Symbol der jahrhundertelangen Universitätsgeschichte.",
+          "zh": "魯汶大學莊嚴的典禮大廳，見證了大學數百年的歷史傳承。"
+        },
+        "url": "https://www.visitleuven.be/universiteitshal",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 258.8,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 312.1,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 179.4,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 231.5,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJNWeaxNlgwU",
+            "name": "The Fiere Margriet",
+            "distance_m": 26.1,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNWeaxNlgwUcR1MJnbAbQw6o",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6782,
+          50.8647
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_013",
+        "name": "Arenbergkasteel",
+        "names": {
+          "en": "Arenberg Castle & Park",
+          "nl": "Arenbergkasteel & -park",
+          "fr": "Château d'Arenberg & parc",
+          "de": "Arenberg-Schloss & Park",
+          "zh": "阿倫貝格城堡與公園"
+        },
+        "category": "university",
+        "description": "A neo-Gothic castle set in a beautiful park, now home to KU Leuven engineering faculty.",
+        "descriptions": {
+          "en": "A neo-Gothic castle set in a beautiful park, now home to KU Leuven engineering faculty.",
+          "nl": "Een neogotisch kasteel in een prachtig park, nu de thuisbasis van de ingenieursfaculteit.",
+          "fr": "Un château néo-gothique dans un beau parc, abritant la faculté d'ingénierie de KU Leuven.",
+          "de": "Ein neugotisches Schloss in einem schönen Park, heute Sitz der Ingenieursfakultät der KU Leuven.",
+          "zh": "新哥德式城堡坐落於美麗公園中，現為魯汶大學工學院所在地。"
+        },
+        "url": "https://www.visitleuven.be/arenbergkasteel-park",
+        "nearby_cafes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7028,
+          50.8785
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_014",
+        "name": "Anatomisch Theater",
+        "names": {
+          "en": "Anatomical Theatre",
+          "nl": "Anatomisch Theater",
+          "fr": "Théâtre anatomique",
+          "de": "Anatomisches Theater",
+          "zh": "維薩里解剖劇場"
+        },
+        "category": "university",
+        "description": "A historic anatomical theatre once used by Andreas Vesalius, pioneer of modern anatomy.",
+        "descriptions": {
+          "en": "A historic anatomical theatre once used by Andreas Vesalius, pioneer of modern anatomy.",
+          "nl": "Een historisch anatomisch theater dat ooit gebruikt werd door Andreas Vesalius.",
+          "fr": "Théâtre anatomique historique utilisé par André Vésale, pionnier de l'anatomie moderne.",
+          "de": "Ein historisches anatomisches Theater, das einst von Andreas Vesalius genutzt wurde.",
+          "zh": "歷史性解剖劇場，曾為現代解剖學先驅安德雷亞斯·維薩里使用。"
+        },
+        "url": "https://www.visitleuven.be/anatomisch-theater",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 359.7,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 253.2,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 258.4,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 297.7,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJabmvJdZgwU",
+            "name": "Fakbar Dulci",
+            "distance_m": 50.3,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJabmvJdZgwUcRW2DL6KQPdK8",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7016,
+          50.8788
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_015",
+        "name": "Hollands College",
+        "names": {
+          "en": "Hollands College",
+          "nl": "Hollands College",
+          "fr": "Collège Hollandais",
+          "de": "Hollands College",
+          "zh": "荷蘭學院"
+        },
+        "category": "university",
+        "description": "A 17th-century college with a magnificent Renaissance courtyard, now an events venue.",
+        "descriptions": {
+          "en": "A 17th-century college with a magnificent Renaissance courtyard, now an events venue.",
+          "nl": "Een 17e-eeuws college met een prachtige renaissance-binnenplaats, nu een evenementenlocatie.",
+          "fr": "Un collège du XVIIe siècle avec une magnifique cour renaissance, maintenant salle d'événements.",
+          "de": "Ein College aus dem 17. Jahrhundert mit einem prächtigen Renaissance-Innenhof.",
+          "zh": "17世紀學院，設有華美的文藝復興庭院，現作為活動場地使用。"
+        },
+        "url": "https://www.visitleuven.be/groepen/hollands-college",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 269.6,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 244.2,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 185.8,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJPQmsjtlgwU",
+            "name": "BARBÓÉK 📚",
+            "distance_m": 241.7,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.6,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJabmvJdZgwU",
+            "name": "Fakbar Dulci",
+            "distance_m": 67.0,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJabmvJdZgwUcRW2DL6KQPdK8",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.694,
+          50.8841
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_016",
+        "name": "Janseniuspark",
+        "names": {
+          "en": "Janseniuspark",
+          "nl": "Janseniuspark",
+          "fr": "Parc Jansénius",
+          "de": "Janseniuspark",
+          "zh": "揚森尼烏斯公園"
+        },
+        "category": "green",
+        "description": "A peaceful green park near the city centre, perfect for a rest between sightseeing.",
+        "descriptions": {
+          "en": "A peaceful green park near the city centre, perfect for a rest between sightseeing.",
+          "nl": "Een rustig groen park dicht bij het stadscentrum, ideaal voor een pauze tijdens het toeren.",
+          "fr": "Un parc verdoyant et tranquille près du centre-ville, idéal pour une pause entre visites.",
+          "de": "Ein ruhiger Grünpark nahe dem Stadtzentrum, ideal für eine Pause beim Sightseeing.",
+          "zh": "靠近市中心的寧靜綠色公園，是觀光途中休憩的理想場所。"
+        },
+        "url": "https://www.visitleuven.be/janseniuspark",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWQT-aN5gwU",
+            "name": "Bar Berlin",
+            "distance_m": 388.5,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQT-aN5gwUcRDvqzEtFxSY4",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUVz0Y95gwU",
+            "name": "Zonnekompas",
+            "distance_m": 377.3,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 3,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUVz0Y95gwUcRaPCgBn8d_Vc",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJSVS-M-dgwU",
+            "name": "Doc's Bar (fakbar Medica)",
+            "distance_m": 449.3,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSVS-M-dgwUcRwy39M7P2Uxc",
+            "cafe_type": "bar",
+            "open_now": "no"
+          },
+          {
+            "cafe_id": "GP_ChIJIfgXOdhgwU",
+            "name": "De Blauwe Kater",
+            "distance_m": 467.7,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.5,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIfgXOdhgwUcRXH67P3gnOe8",
+            "cafe_type": "bar",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJRX5hbvlhwU",
+            "name": "BARBUZZ",
+            "distance_m": 476.4,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 3.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRX5hbvlhwUcRS4r3_F1ASeo",
+            "cafe_type": "cafe",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6955,
+          50.8765
+        ]
+      },
+      "properties": {
+        "feature_type": "attraction",
+        "id": "ATT_017",
+        "name": "Museum voor Dierkunde",
+        "names": {
+          "en": "Museum of Zoology",
+          "nl": "Museum voor Dierkunde",
+          "fr": "Musée de zoologie",
+          "de": "Zoologisches Museum",
+          "zh": "動物學博物館"
+        },
+        "category": "museum",
+        "description": "A natural history museum of zoology housed within KU Leuven, free and fascinating.",
+        "descriptions": {
+          "en": "A natural history museum of zoology housed within KU Leuven, free and fascinating.",
+          "nl": "Een natuurhistorisch museum voor dierkunde op de campus van KU Leuven, gratis toegang.",
+          "fr": "Un musée d'histoire naturelle et de zoologie sur le campus de KU Leuven, entrée gratuite.",
+          "de": "Ein naturhistorisches Museum für Zoologie auf dem Campus der KU Leuven, kostenloser Eintritt.",
+          "zh": "魯汶大學校園內的動物學自然歷史博物館，免費參觀，引人入勝。"
+        },
+        "url": "https://www.visitleuven.be/museum-voor-dierkunde",
+        "nearby_cafes": [
+          {
+            "cafe_id": "GP_ChIJWemUHjJhwU",
+            "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+            "distance_m": 428.2,
+            "wifi": "yes",
+            "socket": "yes",
+            "rating": 4.2,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJUbRoytZgwU",
+            "name": "Noir Coffeebar",
+            "distance_m": 357.9,
+            "wifi": "yes",
+            "socket": "unknown",
+            "rating": 4.7,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJ4SLKWdhgwU",
+            "name": "Café Allee",
+            "distance_m": 315.7,
+            "wifi": "unknown",
+            "socket": "yes",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJZx2w8dhgwU",
+            "name": "BAR MADRID",
+            "distance_m": 238.8,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4.4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZx2w8dhgwUcRhudnWCU9xbA",
+            "cafe_type": "cafe",
+            "open_now": "yes"
+          },
+          {
+            "cafe_id": "GP_ChIJCyClU9hgwU",
+            "name": "Café Manger",
+            "distance_m": 258.1,
+            "wifi": "unknown",
+            "socket": "unknown",
+            "rating": 4,
+            "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCyClU9hgwUcRKV5qqPtrEsk",
+            "cafe_type": "bar",
+            "open_now": "no"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6993111,
+          50.8786424
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJvwvm_thgwU",
+        "name": "Le Pain Quotidien",
+        "cafe_type": "cafe",
+        "address": "Parijsstraat 35, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 5:00 PM | Tuesday: 8:00 AM – 5:00 PM | Wednesday: 8:00 AM – 5:00 PM | Thursday: 8:00 AM – 5:00 PM | Friday: 8:00 AM – 5:00 PM | Saturday: 8:00 AM – 5:00 PM | Sunday: 8:00 AM – 4:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.2,
+        "ratings_total": 862,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvwvm_thgwUcRV0_85F0FX4o",
+        "website": "https://www.lepainquotidien.com/be/en/locations/Leuven/Parijsstraat-35",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6996989,
+          50.87382119999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJTzPFSyZhwU",
+        "name": "STUK Arts Center vzw",
+        "cafe_type": "cafe",
+        "address": "Naamsestraat 96, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 1:00 PM, 2:00 – 5:30 PM, 7:00 – 9:00 PM | Tuesday: 10:00 AM – 1:00 PM, 2:00 – 5:30 PM, 7:00 – 9:00 PM | Wednesday: 10:00 AM – 1:00 PM, 2:00 – 5:30 PM, 7:00 – 9:00 PM | Thursday: 10:00 AM – 1:00 PM, 2:00 – 5:30 PM, 7:00 – 9:00 PM | Friday: 10:00 AM – 1:00 PM, 2:00 – 5:30 PM, 7:00 – 9:00 PM | Saturday: 2:00 – 5:30 PM, 7:00 – 9:00 PM | Sunday: 2:00 – 5:30 PM, 7:00 – 9:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.4,
+        "ratings_total": 1220,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTzPFSyZhwUcRk5baE8-7U2g",
+        "website": "https://www.stuk.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7005916,
+          50.8766985
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJUbRoytZgwU",
+        "name": "Noir Coffeebar",
+        "cafe_type": "cafe",
+        "address": "Naamsestraat 49, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 5:30 PM | Tuesday: 8:30 AM – 5:30 PM | Wednesday: 8:30 AM – 5:30 PM | Thursday: 8:30 AM – 5:30 PM | Friday: 8:30 AM – 5:30 PM | Saturday: 9:30 AM – 5:30 PM | Sunday: 11:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "yes",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.7,
+        "ratings_total": 936,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUbRoytZgwUcRUPMjambAoBQ",
+        "website": "http://www.noir.coffee/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.700604200000001,
+          50.8793622
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJPROMsNlgwU",
+        "name": "Rubens",
+        "cafe_type": "cafe",
+        "address": "Grote Markt 1, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 11:00 AM – 8:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 1.9,
+        "ratings_total": 468,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPROMsNlgwUcR7PhqegBDigM",
+        "website": "https://www.tripadvisor.be/Restaurant_Review-g188669-d7935869-Reviews-Rubens-Leuven_Flemish_Brabant_Province.html",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6994719,
+          50.8776001
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJi8GZX9hgwU",
+        "name": "Het Forum",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 22, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 3:00 AM | Tuesday: 10:00 AM – 3:00 AM | Wednesday: 10:00 AM – 3:00 AM | Thursday: 10:00 AM – 3:00 AM | Friday: 10:00 AM – 3:00 AM | Saturday: 10:00 AM – 3:00 AM | Sunday: 10:00 AM – 3:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.4,
+        "ratings_total": 14,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJi8GZX9hgwUcR3xWwo4tE6oU",
+        "website": "https://www.opcafegaan.be/leuven/het-forum",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6931102,
+          50.8807538
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJUVz0Y95gwU",
+        "name": "Zonnekompas",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 146, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 6:30 PM | Tuesday: 11:00 AM – 6:30 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 11:00 AM – 9:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 3,
+        "ratings_total": 1,
+        "review_count": 1,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUVz0Y95gwUcRaPCgBn8d_Vc",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7054298,
+          50.8770402
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJi97RNNZgwU",
+        "name": "LAPAZ Café",
+        "cafe_type": "cafe",
+        "address": "Tiensestraat 73, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 7:00 AM – 1:00 AM | Saturday: 9:00 AM – 1:00 AM | Sunday: 9:00 AM – 1:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 439,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJi97RNNZgwUcRQlefam3icAE",
+        "website": "https://www.facebook.com/lapazcafe10",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.682807599999999,
+          50.876704
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ08vx-B1hwU",
+        "name": "'t Dagelijks Broodje",
+        "cafe_type": "cafe",
+        "address": "Tervuursesteenweg 7, 3001 Oud-Heverlee, Belgium",
+        "open_hr": "Monday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM | Tuesday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM | Wednesday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM | Thursday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM | Friday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM | Saturday: 5:00 – 10:00 PM | Sunday: 8:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 3.6,
+        "ratings_total": 102,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ08vx-B1hwUcRmTK1W2PSizc",
+        "website": "https://www.restauranttdagelijksbroodje.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6995625,
+          50.8785943
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJoYW0VdhgwU",
+        "name": "Blokhut",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 49, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 4:30 AM | Tuesday: 11:00 AM – 4:30 AM | Wednesday: 11:00 AM – 4:30 AM | Thursday: 11:00 AM – 4:30 AM | Friday: 11:00 AM – 4:30 AM | Saturday: 11:00 AM – 4:30 AM | Sunday: 11:00 AM – 12:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 231,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoYW0VdhgwUcRTuEh1NnWdyA",
+        "website": "https://www.facebook.com/Blokhut-Caf%C3%A9-719620424827874/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7146262,
+          50.8806367
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJPxa4p9RgwU",
+        "name": "Café Maria-Theresia",
+        "cafe_type": "cafe",
+        "address": "Martelarenplein 1, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 221,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPxa4p9RgwUcR7H4swFCJZ2Y",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713931,
+          50.88117399999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJJ85HRdNgwU",
+        "name": "Grand Café Industrie",
+        "cafe_type": "cafe",
+        "address": "Martelarenplein 7, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 11:00 AM – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 1015,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ85HRdNgwUcRAyMxkubMuTM",
+        "website": "https://grandcafe-industrie.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6987729,
+          50.8796313
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJf6RBD9lgwU",
+        "name": "Punto Kiosk",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 33, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 6:00 PM | Tuesday: 8:00 AM – 6:00 PM | Wednesday: 8:00 AM – 6:00 PM | Thursday: 8:00 AM – 6:00 PM | Friday: 8:00 AM – 6:00 PM | Saturday: 8:00 AM – 6:00 PM | Sunday: 10:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.2,
+        "ratings_total": 277,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJf6RBD9lgwUcRvotl9eFz110",
+        "website": "http://www.puntokiosk.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.700103599999999,
+          50.8786424
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJoabzUthgwU",
+        "name": "Ambiorix",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 3, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 6:00 AM | Tuesday: 4:00 PM – 6:00 AM | Wednesday: 4:00 PM – 6:00 AM | Thursday: 4:00 PM – 6:00 AM | Friday: 4:00 PM – 6:00 AM | Saturday: 1:00 PM – 6:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 524,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoabzUthgwUcRdCm4fMTTdYo",
+        "website": "https://www.ambiorixcafe.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7010891,
+          50.8809499
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJPQmsjtlgwU",
+        "name": "BARBÓÉK 📚",
+        "cafe_type": "cafe",
+        "address": "Schrijnmakersstraat 17, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 6:00 PM | Tuesday: 10:00 AM – 6:00 PM | Wednesday: 10:00 AM – 6:00 PM | Thursday: 10:00 AM – 6:00 PM | Friday: 10:00 AM – 6:00 PM | Saturday: 10:00 AM – 6:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "yes",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.6,
+        "ratings_total": 617,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPQmsjtlgwUcRwTFQWrWU8jc",
+        "website": "http://barboek.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6994653,
+          50.8784558
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJuTLdUthgwU",
+        "name": "Metropole",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 46, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 1:00 AM | Tuesday: 10:00 AM – 1:00 AM | Wednesday: 10:00 AM – 1:00 AM | Thursday: 10:00 AM – 1:00 AM | Friday: 10:00 AM – 2:00 AM | Saturday: 11:00 AM – 3:00 AM | Sunday: 12:00 PM – 1:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 425,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJuTLdUthgwUcRBz4X8DJSauc",
+        "website": "http://www.cafe-metropole.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6986094,
+          50.8779875
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJAezI8dhgwU",
+        "name": "Life Bar",
+        "cafe_type": "cafe",
+        "address": "Parijsstraat 48, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 4:00 PM | Tuesday: Closed | Wednesday: 10:00 AM – 4:00 PM | Thursday: 10:00 AM – 4:00 PM | Friday: 10:00 AM – 4:00 PM | Saturday: 9:00 AM – 5:00 PM | Sunday: 9:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 471,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAezI8dhgwUcRGA5ZyqiBebM",
+        "website": "https://mymenuweb.com/bel/restaurants/2034448/?utm_source=google_profile&utm_medium=google_profile&utm_campaign=admin",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7040394,
+          50.879521
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJI7RpbNdgwU",
+        "name": "Punto Caffè",
+        "cafe_type": "cafe",
+        "address": "Leopold Vanderkelenstraat 17a, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 5:00 PM | Tuesday: 8:00 AM – 5:00 PM | Wednesday: 8:00 AM – 5:00 PM | Thursday: 8:00 AM – 5:00 PM | Friday: 8:00 AM – 5:00 PM | Saturday: 9:00 AM – 5:00 PM | Sunday: 1:00 – 5:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 375,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI7RpbNdgwUcRjfcZ4f8Tvhg",
+        "website": "http://www.puntocaffe.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6976483,
+          50.8781657
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJZx2w8dhgwU",
+        "name": "BAR MADRID",
+        "cafe_type": "cafe",
+        "address": "Joris Helleputteplein 1, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 6:00 PM | Tuesday: 10:00 AM – 6:00 PM | Wednesday: 10:00 AM – 6:00 PM | Thursday: 10:00 AM – 6:00 PM | Friday: 10:00 AM – 6:00 PM | Saturday: 10:00 AM – 6:00 PM | Sunday: 10:00 AM – 6:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 718,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZx2w8dhgwUcRhudnWCU9xbA",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6987719,
+          50.8776014
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJxSdDV9hgwU",
+        "name": "De Affiche Leuven",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 29, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": "",
+        "ratings_total": "",
+        "review_count": 0,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxSdDV9hgwUcR8gmeDcMqZzw",
+        "website": "http://www.cafemanger.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6925915,
+          50.8807215
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJWQT-aN5gwU",
+        "name": "Bar Berlin",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 115, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:00 AM – 6:00 PM | Tuesday: 9:00 AM – 6:00 PM | Wednesday: 9:00 AM – 6:00 PM | Thursday: 9:00 AM – 6:00 PM | Friday: 9:00 AM – 6:00 PM | Saturday: 9:00 AM – 6:00 PM | Sunday: 11:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "yes",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 628,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQT-aN5gwUcRDvqzEtFxSY4",
+        "website": "http://www.barberlin.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7096405,
+          50.881474
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJTRDM_dNgwU",
+        "name": "MOK COFFEE",
+        "cafe_type": "cafe",
+        "address": "Diestsestraat 165, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 6:00 PM | Tuesday: 8:00 AM – 6:00 PM | Wednesday: 8:00 AM – 6:00 PM | Thursday: 8:00 AM – 6:00 PM | Friday: 8:00 AM – 6:00 PM | Saturday: 10:00 AM – 6:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 638,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTRDM_dNgwUcR3KMSzhp1ys0",
+        "website": "http://www.mokcoffee.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.709633,
+          50.876433
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJH14uJi1nwU",
+        "name": "Medina Leuven",
+        "cafe_type": "cafe",
+        "address": "Blijde Inkomststraat 31a, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 2:00 PM, 6:00 – 10:00 PM | Tuesday: 10:00 AM – 2:00 PM, 6:00 – 10:00 PM | Wednesday: 10:00 AM – 2:00 PM, 6:00 – 10:00 PM | Thursday: 10:00 AM – 2:00 PM, 6:00 – 10:00 PM | Friday: 10:00 AM – 2:00 PM, 6:00 – 10:00 PM | Saturday: 2:00 – 10:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.3,
+        "ratings_total": 252,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJH14uJi1nwUcRqV5zq2E0G6U",
+        "website": "https://medina-leuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6890828,
+          50.8796589
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ8fvYjuBgwU",
+        "name": "Belgaleiro",
+        "cafe_type": "cafe",
+        "address": "Goudsbloemstraat 50, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 5:00 PM – 1:00 AM | Tuesday: 5:00 PM – 1:00 AM | Wednesday: 5:00 PM – 1:00 AM | Thursday: 5:00 PM – 1:00 AM | Friday: 5:00 PM – 1:00 AM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 265,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8fvYjuBgwUcRPUE6nfapqF0",
+        "website": "http://belgaleiro.com/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6999178,
+          50.8870927
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJS2iCz8RgwU",
+        "name": "De Hoorn Bar & Resto",
+        "cafe_type": "cafe",
+        "address": "Sluisstraat 79, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 12:00 AM | Saturday: 5:00 PM – 12:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 1274,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS2iCz8RgwUcRlzJM7XROSuQ",
+        "website": "https://www.dehoorn.eu/nl/bar",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7091974,
+          50.8741181
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJUUeeOyphwU",
+        "name": "Café Cuvee",
+        "cafe_type": "cafe",
+        "address": "Brabançonnestraat 39, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 2:00 AM | Tuesday: 12:00 PM – 2:00 AM | Wednesday: 12:00 PM – 2:00 AM | Thursday: 12:00 PM – 2:00 AM | Friday: 12:00 PM – 2:00 AM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 29,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUUeeOyphwUcR0ukmf6SKiUU",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.693283099999999,
+          50.8695303
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJyYwvliNhwU",
+        "name": "De Spuye",
+        "cafe_type": "cafe",
+        "address": "Tervuursevest 101, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 1:00 AM | Tuesday: 11:00 AM – 1:00 AM | Wednesday: 11:00 AM – 1:00 AM | Thursday: 11:00 AM – 1:00 AM | Friday: 11:00 AM – 1:00 AM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.3,
+        "ratings_total": 803,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyYwvliNhwUcR17xLcFplHf0",
+        "website": "http://www.despuye.com/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.698,
+          50.8685
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJP65AqiVhwU",
+        "name": "TotalEnergies",
+        "cafe_type": "cafe",
+        "address": "Tervuursevest 9, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 7:30 AM – 7:00 PM | Tuesday: 7:30 AM – 7:00 PM | Wednesday: 7:30 AM – 7:00 PM | Thursday: 7:30 AM – 7:00 PM | Friday: 7:30 AM – 7:00 PM | Saturday: 9:00 AM – 5:00 PM | Sunday: Open 24 hours",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 3.8,
+        "ratings_total": 140,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP65AqiVhwUcRlNdt92ntFj8",
+        "website": "https://www.circlek.be/nl/station/heverlee?utm_source=google&utm_medium=local&utm_campaign=google-local",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.673988899999999,
+          50.87834489999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJv7pVnv1gwU",
+        "name": "UZ Leuven - Koffieshop",
+        "cafe_type": "cafe",
+        "address": "Herestraat 49, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 7:30 AM – 6:00 PM | Tuesday: 7:30 AM – 6:00 PM | Wednesday: 7:30 AM – 6:00 PM | Thursday: 7:30 AM – 6:00 PM | Friday: 7:30 AM – 6:00 PM | Saturday: 2:00 – 6:00 PM | Sunday: 2:00 – 6:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 482,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJv7pVnv1gwUcRss_lRld5o7Y",
+        "website": "https://www.uzleuven.be/koffieshop",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6867633,
+          50.8643831
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJySNJxRdhwU",
+        "name": "Bioengineering bar",
+        "cafe_type": "cafe",
+        "address": "Kasteelpark Arenberg 37, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 10:30 AM – 12:00 AM | Tuesday: 10:30 AM – 12:00 AM | Wednesday: 10:30 AM – 12:00 AM | Thursday: 10:30 AM – 12:00 AM | Friday: 10:30 AM – 7:00 PM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.6,
+        "ratings_total": 144,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJySNJxRdhwUcRg4WSzstd7Es",
+        "website": "https://www.lbk.be/faciliteiten/baarr/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6725348,
+          50.8746666
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ56tXsgNhwU",
+        "name": "Het Goede Boek vzw (Leuven)",
+        "cafe_type": "cafe",
+        "address": "Tervuursesteenweg 194, 3001 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 11:00 AM – 7:00 PM | Wednesday: 11:00 AM – 7:00 PM | Thursday: 11:00 AM – 7:00 PM | Friday: 11:00 AM – 7:00 PM | Saturday: 11:00 AM – 7:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.8,
+        "ratings_total": 55,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ56tXsgNhwUcR3pE6oW401kU",
+        "website": "http://www.hetgoedeboek.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6990592,
+          50.8785781
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ_f3p_thgwU",
+        "name": "Coffee Onan",
+        "cafe_type": "cafe",
+        "address": "Parijsstraat 28, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 5:30 PM | Tuesday: 8:00 AM – 5:30 PM | Wednesday: 8:00 AM – 5:30 PM | Thursday: 8:00 AM – 5:30 PM | Friday: 8:00 AM – 5:30 PM | Saturday: 8:00 AM – 5:30 PM | Sunday: 8:00 AM – 5:30 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.7,
+        "ratings_total": 1185,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_f3p_thgwUcRDXyodhfagUA",
+        "website": "http://www.onan.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6996612,
+          50.87869509999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJcQjcUthgwU",
+        "name": "Revue",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 51, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 6:00 AM | Tuesday: 9:00 AM – 6:00 AM | Wednesday: 9:00 AM – 6:00 AM | Thursday: 9:00 AM – 6:00 AM | Friday: 9:00 AM – 6:00 AM | Saturday: 9:00 AM – 6:00 AM | Sunday: 9:00 AM – 6:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.1,
+        "ratings_total": 155,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcQjcUthgwUcRQgKpQ72KE4M",
+        "website": "http://www.studentenfanfare.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.668299999999999,
+          50.8863
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJXYwDSfhgwU",
+        "name": "TotalEnergies",
+        "cafe_type": "cafe",
+        "address": "Brusselsesteenweg 23/27, 3020 Herent, Belgium",
+        "open_hr": "Monday: 6:00 AM – 7:00 PM | Tuesday: 6:00 AM – 7:00 PM | Wednesday: 6:00 AM – 7:00 PM | Thursday: 6:00 AM – 7:00 PM | Friday: 6:00 AM – 7:00 PM | Saturday: 8:00 AM – 4:00 PM | Sunday: Open 24 hours",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.2,
+        "ratings_total": 306,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXYwDSfhgwUcRkJFKgbS7LrM",
+        "website": "https://www.circlek.be/nl/station/winksele?utm_source=google&utm_medium=local&utm_campaign=google-local",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7147141,
+          50.8732531
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJxcIQLNVmwU",
+        "name": "Kaminsky",
+        "cafe_type": "cafe",
+        "address": "Léon Schreursvest 1, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 11:30 AM – 12:00 AM | Tuesday: 11:30 AM – 12:00 AM | Wednesday: 11:30 AM – 12:00 AM | Thursday: 11:30 AM – 12:00 AM | Friday: 11:30 AM – 12:00 AM | Saturday: 11:30 AM – 12:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 1366,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxcIQLNVmwUcR9PxRLapa05E",
+        "website": "http://www.kaminsky.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7033159,
+          50.8772866
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJt4PNv9dgwU",
+        "name": "Quetzal The Chocolate Bar Leuven",
+        "cafe_type": "cafe",
+        "address": "Alfons Smetsplein 3, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 – 10:00 PM | Tuesday: 12:00 – 10:00 PM | Wednesday: 12:00 – 10:00 PM | Thursday: 12:00 – 10:00 PM | Friday: 12:00 – 10:00 PM | Saturday: 12:00 – 10:00 PM | Sunday: 12:00 – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 1686,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt4PNv9dgwUcRgUKurdOCEmw",
+        "website": "http://www.quetzal.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7000091,
+          50.8797855
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJl1zO1dtgwU",
+        "name": "De Blauwe Schuit",
+        "cafe_type": "cafe",
+        "address": "Mathieu de Layensplein 4, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 12:00 AM | Tuesday: 11:00 AM – 12:00 AM | Wednesday: 11:00 AM – 12:00 AM | Thursday: 11:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 11:00 AM – 12:00 AM | Sunday: 12:00 PM – 12:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4,
+        "ratings_total": 674,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl1zO1dtgwUcRWNDjvamW7PE",
+        "website": "http://www.deblauweschuit.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6991586,
+          50.8781527
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ4SLKWdhgwU",
+        "name": "Café Allee",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 41, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 8:00 AM | Tuesday: 10:00 AM – 8:00 AM | Wednesday: 10:00 AM – 8:00 AM | Thursday: 10:00 AM – 8:00 AM | Friday: 10:00 AM – 8:00 AM | Saturday: 10:00 AM – 8:00 AM | Sunday: 10:00 AM – 12:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "yes",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 290,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4SLKWdhgwUcRotZu_6qCSac",
+        "website": "https://www.opcafegaan.be/leuven/cafe-allee",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.697950700000001,
+          50.8783612
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ41wV6NhgwU",
+        "name": "wereldcafe coop",
+        "cafe_type": "cafe",
+        "address": "Joris Helleputteplein 2, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 474,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ41wV6NhgwUcRivmmoJBwOTc",
+        "website": "http://www.wereldcafe.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6878239,
+          50.87390689999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJG_xRcR9hwU",
+        "name": "TotalEnergies",
+        "cafe_type": "cafe",
+        "address": "Tervuursevest 238, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4,
+        "ratings_total": 154,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG_xRcR9hwUcRhEJjlLebc4w",
+        "website": "https://www.circlek.be/nl/station/leuven?utm_source=google&utm_medium=local&utm_campaign=google-local",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7077464,
+          50.8694889
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ20GXGCxhwU",
+        "name": "bvba t kontrast / Driers",
+        "cafe_type": "cafe",
+        "address": "Geldenaaksevest 124, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.3,
+        "ratings_total": 4,
+        "review_count": 4,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ20GXGCxhwUcRKVvtXCaOaqM",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7018582,
+          50.87963180000001
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJNWeaxNlgwU",
+        "name": "The Fiere Margriet",
+        "cafe_type": "cafe",
+        "address": "Margarethaplein 11, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 4:00 PM – 2:00 AM | Wednesday: 4:00 PM – 2:00 AM | Thursday: 4:00 PM – 2:00 AM | Friday: 4:00 PM – 2:00 AM | Saturday: 4:00 PM – 3:00 AM | Sunday: 4:00 PM – 2:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.6,
+        "ratings_total": 633,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNWeaxNlgwUcR1MJnbAbQw6o",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7002979,
+          50.8796906
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJU_RXARthwU",
+        "name": "Dokteur",
+        "cafe_type": "cafe",
+        "address": "Mathieu de Layensplein 1, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 1:00 AM | Tuesday: 4:00 PM – 1:00 AM | Wednesday: 4:00 PM – 1:00 AM | Thursday: 4:00 PM – 1:00 AM | Friday: 4:00 PM – 2:00 AM | Saturday: 4:00 PM – 3:00 AM | Sunday: 4:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 388,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU_RXARthwUcRvQhtkBphKLg",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6998722,
+          50.8795635
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJe95IJwVhwU",
+        "name": "Chocolatte",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 10, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 6:00 PM | Tuesday: Closed | Wednesday: 8:00 AM – 6:00 PM | Thursday: 8:00 AM – 6:00 PM | Friday: 8:00 AM – 6:00 PM | Saturday: 9:00 AM – 6:00 PM | Sunday: 10:30 AM – 5:30 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 600,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe95IJwVhwUcRAkzHUK0zlpc",
+        "website": "http://www.chocolatte.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6999983,
+          50.8793795
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ4V9_v1RhwU",
+        "name": "IzyCoffee Leuven",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 5, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Tuesday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Wednesday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Thursday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Friday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Saturday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM | Sunday: 9:00 AM – 1:30 PM, 2:00 – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 172,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4V9_v1RhwUcRnZ-8Ev6YWy4",
+        "website": "http://www.izycoffee.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7008893,
+          50.8792947
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ9287t9lgwU",
+        "name": "Resto Café Agora",
+        "cafe_type": "cafe",
+        "address": "Grote Markt 3, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 597,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9287t9lgwUcRTjj34qN8TUQ",
+        "website": "http://www.agora-leuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6997157,
+          50.8802944
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ64rvZNtgwU",
+        "name": "Koffie en Staal",
+        "cafe_type": "cafe",
+        "address": "Dirk Boutslaan 12, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 9:00 AM – 5:00 PM | Wednesday: 9:00 AM – 5:00 PM | Thursday: 9:00 AM – 5:00 PM | Friday: 9:00 AM – 5:00 PM | Saturday: 9:00 AM – 5:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 358,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ64rvZNtgwUcRgF0aLpV5XYo",
+        "website": "http://www.koffieenstaal.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.699771999999999,
+          50.8791672
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJN52FwPFhwU",
+        "name": "Kanela Greek Pastry & Coffee",
+        "cafe_type": "cafe",
+        "address": "Parijsstraat 9, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 6:00 PM | Tuesday: 8:00 AM – 6:00 PM | Wednesday: 8:00 AM – 6:00 PM | Thursday: 8:00 AM – 6:00 PM | Friday: 8:00 AM – 6:00 PM | Saturday: 8:00 AM – 6:00 PM | Sunday: 8:00 AM – 6:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.9,
+        "ratings_total": 200,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJN52FwPFhwUcRgvGogtbXCEs",
+        "website": "https://kanela.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6998821,
+          50.8788395
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJTzQv24phwU",
+        "name": "Gossip Gastro Bar",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 55, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.6,
+        "ratings_total": 9,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTzQv24phwUcRN6WkfRp7hro",
+        "website": "http://www.gossipgastrobar.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7000474,
+          50.8787913
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJI8L_-XhhwU",
+        "name": "CoCo Bubble Tea Leuven",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 56, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 – 8:00 PM | Tuesday: 12:00 – 8:00 PM | Wednesday: 12:00 – 8:00 PM | Thursday: 12:00 – 8:00 PM | Friday: 12:00 – 8:00 PM | Saturday: 12:00 – 8:00 PM | Sunday: 12:00 – 8:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.8,
+        "ratings_total": 239,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI8L_-XhhwUcRmeSFXudSwko",
+        "website": "https://cocobubbletea.com/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.702423,
+          50.8794559
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJU0i92dlgwU",
+        "name": "Le Graal",
+        "cafe_type": "cafe",
+        "address": "Rector de Somerplein 3, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 6:30 PM | Tuesday: 8:30 AM – 6:30 PM | Wednesday: Closed | Thursday: 8:30 AM – 6:30 PM | Friday: 8:30 AM – 6:30 PM | Saturday: 8:30 AM – 6:30 PM | Sunday: 8:30 AM – 6:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 333,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU0i92dlgwUcRvfC04wQvOik",
+        "website": "https://m.facebook.com/Le-graal-955814557808134/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.698216,
+          50.879949
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJWemUHjJhwU",
+        "name": "Madmum Coffee Roasters & bar Brusselsestraat",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 42, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 6:00 PM | Tuesday: 8:30 AM – 6:00 PM | Wednesday: 8:30 AM – 6:00 PM | Thursday: 8:30 AM – 6:00 PM | Friday: 8:30 AM – 6:00 PM | Saturday: 8:30 AM – 6:00 PM | Sunday: 9:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "yes",
+        "socket": "yes",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.2,
+        "ratings_total": 216,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWemUHjJhwUcRwJeiHgA_0Zw",
+        "website": "http://www.madmumcoffee.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6994175,
+          50.8811033
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJXej2vHZhwU",
+        "name": "LEOpancakes",
+        "cafe_type": "cafe",
+        "address": "Mechelsestraat 45, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:00 AM – 5:00 PM | Tuesday: Closed | Wednesday: 9:00 AM – 5:00 PM | Thursday: 9:00 AM – 5:00 PM | Friday: 9:00 AM – 5:00 PM | Saturday: 9:00 AM – 5:00 PM | Sunday: 9:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 783,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXej2vHZhwUcRL00_ykOtvy8",
+        "website": "https://www.leopancakes.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6990488,
+          50.8784705
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJP5uz_thgwU",
+        "name": "Den Delper",
+        "cafe_type": "cafe",
+        "address": "Parijsstraat 30, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 2:00 PM – 2:00 AM | Tuesday: 2:00 PM – 4:00 AM | Wednesday: 2:00 PM – 4:00 AM | Thursday: 2:00 PM – 4:00 AM | Friday: 2:00 PM – 6:00 AM | Saturday: 12:00 PM – 5:00 AM | Sunday: 12:00 PM – 4:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 165,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP5uz_thgwUcRfO47MWcQE7U",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6992771,
+          50.8782346
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJdRKveehhwU",
+        "name": "Karement",
+        "cafe_type": "cafe",
+        "address": "Oude Markt 43, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:30 AM – 5:00 AM | Tuesday: 11:30 AM – 5:00 AM | Wednesday: 11:30 AM – 5:00 AM | Thursday: 11:30 AM – 5:00 AM | Friday: 11:30 AM – 5:00 AM | Saturday: 11:30 AM – 5:00 AM | Sunday: 11:30 AM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 3,
+        "ratings_total": 241,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdRKveehhwUcRt3OYL2QIWBw",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7030346,
+          50.8789785
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJBekYXPZhwU",
+        "name": "Danta’s coffee",
+        "cafe_type": "cafe",
+        "address": "Rector de Somerplein 15, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 7:30 PM | Tuesday: 10:00 AM – 7:30 PM | Wednesday: 10:00 AM – 7:30 PM | Thursday: 10:00 AM – 7:30 PM | Friday: 10:00 AM – 7:30 PM | Saturday: 10:00 AM – 7:30 PM | Sunday: 11:00 AM – 7:30 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.7,
+        "ratings_total": 153,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBekYXPZhwUcRJhZpOzCMm0M",
+        "website": "https://www.dantascoffee.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7035198,
+          50.8804437
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJTx8fUtdgwU",
+        "name": "Van de Velde Stadscafe",
+        "cafe_type": "cafe",
+        "address": "Rijschoolstraat 4, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 6:30 PM | Tuesday: 8:30 AM – 6:30 PM | Wednesday: 8:30 AM – 6:30 PM | Thursday: 8:30 AM – 8:30 PM | Friday: 8:30 AM – 6:30 PM | Saturday: 8:30 AM – 6:30 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "unknown",
+        "rating": 4.5,
+        "ratings_total": 90,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTx8fUtdgwUcR0e63SUuydbU",
+        "website": "http://www.cafevandevelde.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7040394,
+          50.879521
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJWVBzcCphwU",
+        "name": "Yuzies - Café",
+        "cafe_type": "cafe",
+        "address": "Leopold Vanderkelenstraat 17a, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 7:00 PM | Tuesday: 8:30 AM – 7:00 PM | Wednesday: 8:30 AM – 7:00 PM | Thursday: 8:30 AM – 7:00 PM | Friday: 8:30 AM – 7:00 PM | Saturday: 10:30 AM – 7:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.7,
+        "ratings_total": 114,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWVBzcCphwUcR9pL3EL_FBbk",
+        "website": "https://www.yuzies.com/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7040997,
+          50.8790573
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJK3VcJz1hwU",
+        "name": "Barbóék in M 📚",
+        "cafe_type": "cafe",
+        "address": "Savoyestraat 10, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 6:00 PM | Tuesday: 11:00 AM – 6:00 PM | Wednesday: Closed | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 6:00 PM | Saturday: 11:00 AM – 6:00 PM | Sunday: 11:00 AM – 6:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.2,
+        "ratings_total": 18,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJK3VcJz1hwUcRYx38-2G4Ie8",
+        "website": "https://barboek.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6964879,
+          50.8801135
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJRX5hbvlhwU",
+        "name": "BARBUZZ",
+        "cafe_type": "cafe",
+        "address": "Brusselsestraat 63, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: 2:00 – 10:00 PM | Thursday: Closed | Friday: 4:00 – 10:00 PM | Saturday: 2:00 – 10:00 PM | Sunday: 2:00 – 10:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 3.7,
+        "ratings_total": 3,
+        "review_count": 3,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRX5hbvlhwUcRS4r3_F1ASeo",
+        "website": "https://www.facebook.com/barveloleuven",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703529899999999,
+          50.8779579
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJSQ1B8JFhwU",
+        "name": "madmum Coffee Roasters & Bar",
+        "cafe_type": "cafe",
+        "address": "Tiensestraat 38, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:30 AM – 6:00 PM | Tuesday: 8:30 AM – 6:00 PM | Wednesday: 8:30 AM – 6:00 PM | Thursday: 8:30 AM – 6:00 PM | Friday: 8:30 AM – 6:00 PM | Saturday: 8:30 AM – 6:00 PM | Sunday: 9:00 AM – 5:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 931,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSQ1B8JFhwUcRxNao2qSt9kI",
+        "website": "https://madmumcoffee.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.700749,
+          50.8793285
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJtwwlsNlgwU",
+        "name": "Bar Louis",
+        "cafe_type": "bar",
+        "address": "Grote Markt 2, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 – 11:00 PM | Tuesday: 12:00 – 11:00 PM | Wednesday: 12:00 – 11:00 PM | Thursday: 12:00 – 11:00 PM | Friday: 12:00 – 11:00 PM | Saturday: 12:00 – 11:00 PM | Sunday: 12:00 – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4,
+        "ratings_total": 1033,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtwwlsNlgwUcRgyMswJb44r0",
+        "website": "http://www.barlouis.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7077099,
+          50.8784298
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJV9z4YdZgwU",
+        "name": "Carlisse",
+        "cafe_type": "bar",
+        "address": "Arendstraat 1, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 2:00 AM | Tuesday: 12:00 PM – 2:00 AM | Wednesday: 12:00 PM – 2:00 AM | Thursday: 12:00 PM – 2:00 AM | Friday: 12:00 PM – 2:00 AM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 346,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV9z4YdZgwUcRu4vmJ7UmkdE",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7007917,
+          50.8801571
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJR5a1v9lgwU",
+        "name": "Leuven Central",
+        "cafe_type": "bar",
+        "address": "Margarethaplein 3, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:30 AM – 12:00 AM | Tuesday: 9:30 AM – 12:00 AM | Wednesday: 9:30 AM – 12:00 AM | Thursday: 9:30 AM – 12:00 AM | Friday: 9:30 AM – 2:30 AM | Saturday: 10:30 AM – 3:00 AM | Sunday: 1:00 – 10:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 1238,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR5a1v9lgwUcRlK_3OtOhlro",
+        "website": "https://qr.leuvencentral.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6985607,
+          50.8796195
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJbeuOENlgwU",
+        "name": "Pakt 24 Bvba",
+        "cafe_type": "bar",
+        "address": "Wieringstraat 2, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": "",
+        "ratings_total": "",
+        "review_count": 0,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbeuOENlgwUcRy-Fxi30-di8",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6999694,
+          50.8784576
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJT3vNU9hgwU",
+        "name": "Barvista",
+        "cafe_type": "bar",
+        "address": "Oude Markt 7/8, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 2:00 AM | Tuesday: 12:00 PM – 5:00 AM | Wednesday: 12:00 PM – 5:00 AM | Thursday: 12:00 PM – 5:00 AM | Friday: 12:00 PM – 5:00 AM | Saturday: 12:00 PM – 5:00 AM | Sunday: 12:00 PM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.8,
+        "ratings_total": 1068,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT3vNU9hgwUcRJ5wuohjaHaw",
+        "website": "http://www.barvista.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6990867,
+          50.8808759
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJqW4ne9lgwU",
+        "name": "Surlie🍷",
+        "cafe_type": "bar",
+        "address": "Wandelingstraat 5, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: Closed | Thursday: 4:00 – 10:00 PM | Friday: 4:00 – 11:00 PM | Saturday: 2:00 – 10:00 PM | Sunday: 3:00 – 9:00 PM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 166,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqW4ne9lgwUcRCAtWhrN0GSw",
+        "website": "https://www.surlie.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6995013,
+          50.8785211
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ5XzbVdhgwU",
+        "name": "Plaza",
+        "cafe_type": "bar",
+        "address": "Oude Markt 47, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: 4:00 PM – 1:00 AM | Thursday: 4:00 PM – 1:00 AM | Friday: 4:00 PM – 4:00 AM | Saturday: 2:00 PM – 4:00 AM | Sunday: 2:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 273,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5XzbVdhgwUcRZKnVXfOHTGk",
+        "website": "http://www.plaza47.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6995892,
+          50.87833939999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJNZbJWdhgwU",
+        "name": "Leuven Oude Markt",
+        "cafe_type": "bar",
+        "address": "Oude Markt 31, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.6,
+        "ratings_total": 5608,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNZbJWdhgwUcRWQOrRaaF4CA",
+        "website": "https://www.oudemarktleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7015541,
+          50.8813317
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJM-Bo9dlgwU",
+        "name": "Cafe In Den Boule",
+        "cafe_type": "bar",
+        "address": "Augustijnenstraat 2, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 12:00 AM | Tuesday: 11:00 AM – 12:00 AM | Wednesday: 11:00 AM – 12:00 AM | Thursday: 11:00 AM – 12:00 AM | Friday: Closed | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.1,
+        "ratings_total": 194,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJM-Bo9dlgwUcR0N-GWBStxEg",
+        "website": "https://www.indenboule.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6990412,
+          50.8779109
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJz1jv9thgwU",
+        "name": "Café Belge",
+        "cafe_type": "bar",
+        "address": "Oude Markt 35, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 2:00 AM | Tuesday: 4:00 PM – 2:00 AM | Wednesday: 4:00 PM – 2:00 AM | Thursday: 4:00 PM – 2:00 AM | Friday: 4:00 PM – 6:00 AM | Saturday: 12:00 PM – 6:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.2,
+        "ratings_total": 1044,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz1jv9thgwUcRLp-B1c_O8xc",
+        "website": "http://cafebelgeleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7080443,
+          50.8772801
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJh0MGc9ZgwU",
+        "name": "Fakbar Letteren",
+        "cafe_type": "bar",
+        "address": "Blijde Inkomststraat 11, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:30 PM – 4:00 AM | Tuesday: 12:30 PM – 4:00 AM | Wednesday: 12:30 PM – 4:00 AM | Thursday: 12:30 PM – 4:00 AM | Friday: 12:30 – 4:00 PM | Saturday: Closed | Sunday: 9:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 259,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh0MGc9ZgwUcRg-AYroGIIb0",
+        "website": "https://fakbarletteren.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7026689,
+          50.8713549
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJcWSrtyhhwU",
+        "name": "bar Stan",
+        "cafe_type": "bar",
+        "address": "Constantin Meunierstraat 2, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 AM – 11:30 PM | Tuesday: 8:00 AM – 11:30 PM | Wednesday: 8:00 AM – 11:30 PM | Thursday: 8:00 AM – 11:30 PM | Friday: 8:00 AM – 11:30 PM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 795,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcWSrtyhhwUcRHToHYlH6ak4",
+        "website": "http://www.barstan.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6864015,
+          50.8817987
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJjSxVSuFgwU",
+        "name": "Torresbar",
+        "cafe_type": "bar",
+        "address": "Brusselsestraat 165, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 9:00 PM – 4:00 AM | Wednesday: Closed | Thursday: 9:00 PM – 4:00 AM | Friday: Closed | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 5,
+        "ratings_total": 5,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJjSxVSuFgwUcRhJWoI8rRH8Y",
+        "website": "http://www.facebook.com/CamiloTorresbar",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6954107,
+          50.8698753
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJycH8bCRhwU",
+        "name": "'t ElixIr",
+        "cafe_type": "bar",
+        "address": "Tervuursevest 60, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 PM – 5:00 AM | Tuesday: 10:00 PM – 5:00 AM | Wednesday: 10:00 PM – 5:00 AM | Thursday: 10:00 PM – 5:00 AM | Friday: Closed | Saturday: Closed | Sunday: 10:00 PM – 5:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€",
+        "rating": 4.6,
+        "ratings_total": 224,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJycH8bCRhwUcR5vhzmA7vRJY",
+        "website": "https://www.vtk.be/nl/page/fakbar/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.725802799999999,
+          50.8855747
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJtVudKjBnwU",
+        "name": "Jeugdhuis de Grams",
+        "cafe_type": "bar",
+        "address": "Elfnovemberlaan 59, 3010 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: Closed | Thursday: Closed | Friday: 9:00 PM – 2:00 AM | Saturday: Closed | Sunday: 7:00 PM – 12:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 5,
+        "ratings_total": 11,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtVudKjBnwUcRmtncn6Rh4ec",
+        "website": "http://grams.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.699697899999999,
+          50.8787375
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJpdPEUthgwU",
+        "name": "Café Apero",
+        "cafe_type": "bar",
+        "address": "Oude Markt 52, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: Closed | Thursday: 4:00 PM – 5:00 AM | Friday: 11:30 AM – 5:00 AM | Saturday: 11:30 AM – 5:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 186,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpdPEUthgwUcRRMMB8nUX4Dk",
+        "website": "http://www.cafeapero.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.699309299999999,
+          50.878307
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ92oBV9hgwU",
+        "name": "De Weerelt",
+        "cafe_type": "bar",
+        "address": "Oude Markt 44, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 4:00 AM | Tuesday: 10:00 AM – 4:00 AM | Wednesday: 10:00 AM – 4:00 AM | Thursday: 10:00 AM – 4:00 AM | Friday: 10:00 AM – 4:00 AM | Saturday: 10:00 AM – 4:00 AM | Sunday: 10:00 AM – 3:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 142,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92oBV9hgwUcRUi8sKq5-vFA",
+        "website": "http://www.weerelt.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.698742,
+          50.877596
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJCyClU9hgwU",
+        "name": "Café Manger",
+        "cafe_type": "bar",
+        "address": "Oude Markt 29, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 11:00 AM – 5:00 AM | Wednesday: 11:00 AM – 5:00 AM | Thursday: 11:00 AM – 5:00 AM | Friday: 11:00 AM – 5:00 AM | Saturday: 11:00 AM – 5:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4,
+        "ratings_total": 584,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCyClU9hgwUcRKV5qqPtrEsk",
+        "website": "http://www.cafemanger.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6885184,
+          50.8820107
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJSVS-M-dgwU",
+        "name": "Doc's Bar (fakbar Medica)",
+        "cafe_type": "bar",
+        "address": "Brusselsestraat 246, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: 10:00 PM – 3:00 AM | Thursday: 11:30 PM – 4:00 AM | Friday: Closed | Saturday: Closed | Sunday: 9:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4,
+        "ratings_total": 241,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSVS-M-dgwUcRwy39M7P2Uxc",
+        "website": "https://www.medica.be/docs-bar/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7000633,
+          50.8785617
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJcQNMUthgwU",
+        "name": "De Rector",
+        "cafe_type": "bar",
+        "address": "Oude Markt 4, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 1:00 AM | Tuesday: 12:00 PM – 1:00 AM | Wednesday: 12:00 PM – 1:00 AM | Thursday: 12:00 PM – 1:00 AM | Friday: 12:00 PM – 1:00 AM | Saturday: 12:00 PM – 1:00 AM | Sunday: 12:00 PM – 1:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 958,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcQNMUthgwUcRBRGwmWXto3Q",
+        "website": "http://www.derector.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7066509,
+          50.8718419
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJPxvZailhwU",
+        "name": "De Komma Snooker & Pool",
+        "cafe_type": "bar",
+        "address": "Frederik Lintsstraat 45, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 2:00 PM – 1:00 AM | Tuesday: 2:00 PM – 1:00 AM | Wednesday: 11:00 AM – 1:00 AM | Thursday: 2:00 PM – 1:00 AM | Friday: 2:00 PM – 1:00 AM | Saturday: 1:00 PM – 1:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 142,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPxvZailhwUcREn8xOmJWjMY",
+        "website": "http://www.dekommaleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6998863,
+          50.8783349
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJP7LiU9hgwU",
+        "name": "Bar Nine",
+        "cafe_type": "bar",
+        "address": "Oude Markt 9, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 2:00 AM | Tuesday: 12:00 PM – 2:00 AM | Wednesday: 12:00 PM – 2:00 AM | Thursday: 12:00 PM – 2:00 AM | Friday: 12:00 PM – 2:00 AM | Saturday: 12:00 PM – 3:00 AM | Sunday: 12:00 PM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 1428,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP7LiU9hgwUcRBBSD-u3kuBo",
+        "website": "http://www.bar-nine.be/nl/#/home",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6988935,
+          50.8777243
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJfQVz89hgwU",
+        "name": "Alegria",
+        "cafe_type": "bar",
+        "address": "Oude Markt 31, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 5:00 PM – 5:00 AM | Tuesday: 12:00 PM – 5:00 AM | Wednesday: 12:00 PM – 5:00 AM | Thursday: 12:00 PM – 5:00 AM | Friday: 12:00 PM – 5:00 AM | Saturday: 12:00 PM – 5:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 3.8,
+        "ratings_total": 94,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJfQVz89hgwUcRaeO5CpJsxdw",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6995688,
+          50.87893829999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJb-UKANlgwU",
+        "name": "Kalypta Tapas Bar & World Kitchen",
+        "cafe_type": "bar",
+        "address": "Parijsstraat 21, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:30 AM – 2:30 PM, 5:30 – 10:00 PM | Tuesday: 5:30 – 10:00 PM | Wednesday: 11:30 AM – 2:30 PM, 5:30 – 10:00 PM | Thursday: 11:30 AM – 2:30 PM, 5:30 – 10:00 PM | Friday: 11:30 AM – 2:30 PM, 5:30 – 10:00 PM | Saturday: 11:30 AM – 10:00 PM | Sunday: 11:30 AM – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.1,
+        "ratings_total": 506,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJb-UKANlgwUcR-uKzrSCoNeE",
+        "website": "https://www.kalypta.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6992652,
+          50.8815203
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJIfgXOdhgwU",
+        "name": "De Blauwe Kater",
+        "cafe_type": "bar",
+        "address": "Mechelsestraat 51, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 2:00 AM | Tuesday: 11:00 AM – 2:00 AM | Wednesday: 11:00 AM – 2:00 AM | Thursday: 11:00 AM – 2:00 AM | Friday: 11:00 AM – 2:00 AM | Saturday: 11:00 AM – 3:00 AM | Sunday: 12:00 PM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 937,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIfgXOdhgwUcRXH67P3gnOe8",
+        "website": "http://www.blauwekater.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.699146,
+          50.87809499999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJWUCN0NlgwU",
+        "name": "Vesper",
+        "cafe_type": "bar",
+        "address": "Oude Markt 39/40, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:30 PM – 2:00 AM | Tuesday: 4:30 PM – 5:00 AM | Wednesday: 4:30 PM – 5:00 AM | Thursday: 4:30 PM – 5:00 AM | Friday: 4:30 PM – 5:00 AM | Saturday: 12:00 PM – 5:00 AM | Sunday: 12:00 PM – 1:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.5,
+        "ratings_total": 272,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWUCN0NlgwUcRudCy7jjZSv8",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7044733,
+          50.873301
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJCZWY_ShhwU",
+        "name": "Pangaea",
+        "cafe_type": "bar",
+        "address": "Andreas Vesaliusstraat 34, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 – 11:30 PM | Tuesday: 12:00 – 11:30 PM | Wednesday: 12:00 – 11:30 PM | Thursday: 12:00 – 11:30 PM | Friday: 12:00 – 11:30 PM | Saturday: 12:00 – 11:30 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.6,
+        "ratings_total": 529,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCZWY_ShhwUcRlqELz8RS9tw",
+        "website": "http://www.kuleuven.be/pangaea",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6993746,
+          50.8783717
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJxVk0VthgwU",
+        "name": "Café Den Brosser",
+        "cafe_type": "bar",
+        "address": "Oude Markt 45, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 AM – 1:00 AM | Tuesday: 10:00 AM – 1:00 AM | Wednesday: 10:00 AM – 1:00 AM | Thursday: 10:00 AM – 3:00 AM | Friday: 10:00 AM – 3:00 AM | Saturday: 10:00 AM – 3:00 AM | Sunday: 10:00 AM – 1:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 3.9,
+        "ratings_total": 148,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxVk0VthgwUcRu9XfUGCxR4g",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7019554,
+          50.8731891
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJzXxbgShhwU",
+        "name": "Downtown Jack",
+        "cafe_type": "bar",
+        "address": "Parkstraat 40, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 2:00 PM – 1:00 AM | Tuesday: 2:00 PM – 1:00 AM | Wednesday: 2:00 PM – 1:00 AM | Thursday: 2:00 PM – 1:00 AM | Friday: 2:00 PM – 2:00 AM | Saturday: 2:00 PM – 3:00 AM | Sunday: 2:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 1566,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzXxbgShhwUcRckNGmnR0ySU",
+        "website": "http://www.downtownjack.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.702618800000001,
+          50.8780231
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ8Q7PiddgwU",
+        "name": "Café De Libertad",
+        "cafe_type": "bar",
+        "address": "Muntstraat 28, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 3:00 AM | Tuesday: 4:00 PM – 3:00 AM | Wednesday: 4:00 PM – 3:00 AM | Thursday: 4:00 PM – 5:00 AM | Friday: 4:00 PM – 5:00 AM | Saturday: 4:00 PM – 5:00 AM | Sunday: 4:00 PM – 3:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 528,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8Q7PiddgwUcRPEFXnu0edQw",
+        "website": "http://www.libertad.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6990679,
+          50.8779708
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJwfXeWNhgwU",
+        "name": "De Kroeg",
+        "cafe_type": "bar",
+        "address": "Oude Markt 36, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 3:45 AM | Tuesday: 4:00 PM – 3:45 AM | Wednesday: 4:00 PM – 3:45 AM | Thursday: 4:00 PM – 3:45 AM | Friday: 4:00 PM – 3:45 AM | Saturday: 4:00 PM – 3:45 AM | Sunday: 4:00 PM – 3:45 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.1,
+        "ratings_total": 86,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJwfXeWNhgwUcR93JqWeDjGOc",
+        "website": "https://www.opcafegaan.be/leuven/de-kroeg",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.700326,
+          50.87822670000001
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJyQJLTthgwU",
+        "name": "Chaos Snooker and Pool",
+        "cafe_type": "bar",
+        "address": "Zeelstraat 1, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 3:00 PM – 2:00 AM | Tuesday: 3:00 PM – 2:00 AM | Wednesday: 3:00 PM – 2:00 AM | Thursday: 3:00 PM – 2:00 AM | Friday: 3:00 PM – 2:00 AM | Saturday: 3:00 PM – 3:00 AM | Sunday: 3:00 PM – 12:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.3,
+        "ratings_total": 440,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyQJLTthgwUcRrtTjg2E1P4Y",
+        "website": "http://www.chaosleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7021506,
+          50.8783073
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJabmvJdZgwU",
+        "name": "Fakbar Dulci",
+        "cafe_type": "bar",
+        "address": "Muntstraat 5, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 9:00 PM – 5:00 AM | Tuesday: 9:00 PM – 5:00 AM | Wednesday: 9:00 PM – 5:00 AM | Thursday: 9:00 PM – 5:00 AM | Friday: Closed | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€",
+        "rating": 4.2,
+        "ratings_total": 274,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJabmvJdZgwUcRW2DL6KQPdK8",
+        "website": "http://www.dulci.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7142954,
+          50.8817234
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ8aEyQtNgwU",
+        "name": "Den Ouden Tijd",
+        "cafe_type": "bar",
+        "address": "Tiensevest 22, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 6:00 AM – 1:30 AM | Tuesday: 6:00 AM – 1:30 AM | Wednesday: 6:00 AM – 1:30 AM | Thursday: 6:00 AM – 1:30 AM | Friday: 6:00 AM – 1:30 AM | Saturday: 7:00 AM – 1:30 AM | Sunday: 9:00 AM – 1:30 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 418,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8aEyQtNgwUcR6WdY0TphPx4",
+        "website": "https://www.opcafegaan.be/leuven/in-den-ouden-tijd",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7046891,
+          50.877242
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJFamXx9dgwU",
+        "name": "Recup - Fakbar Psychology and Industrial Engineering",
+        "cafe_type": "bar",
+        "address": "Tiensestraat 51, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 6:00 PM – 12:00 AM | Tuesday: 6:00 PM – 5:00 AM | Wednesday: 6:00 PM – 5:00 AM | Thursday: 6:00 PM – 5:00 AM | Friday: Closed | Saturday: Closed | Sunday: 9:00 PM – 5:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.3,
+        "ratings_total": 391,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFamXx9dgwUcR-7Vqei_GQh8",
+        "website": "http://fakbarrecup.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7048135,
+          50.8771986
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJIcI_yNdgwU",
+        "name": "Politika Kaffee",
+        "cafe_type": "bar",
+        "address": "Tiensestraat 55, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 4:00 PM – 5:00 AM | Tuesday: 4:00 PM – 5:00 AM | Wednesday: 4:00 PM – 5:00 AM | Thursday: 4:00 PM – 5:00 AM | Friday: Closed | Saturday: Closed | Sunday: 9:00 PM – 5:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.2,
+        "ratings_total": 134,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIcI_yNdgwUcRm1N_fDIoDOE",
+        "website": "http://politika.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7199849,
+          50.8849908
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ5REZnS1nwU",
+        "name": "Tempo Cafe",
+        "cafe_type": "bar",
+        "address": "Baron August de Becker Remyplein 52, 3010 Leuven, Belgium",
+        "open_hr": "Monday: 3:00 PM – 1:00 AM | Tuesday: 3:00 PM – 1:00 AM | Wednesday: 1:00 PM – 1:00 AM | Thursday: 3:00 PM – 1:00 AM | Friday: 3:00 PM – 1:00 AM | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 344,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5REZnS1nwUcRUaC3OTyMW68",
+        "website": "http://www.cafetempo.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6989375,
+          50.87837529999999
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJAzLO-9hgwU",
+        "name": "De Metafoor",
+        "cafe_type": "bar",
+        "address": "Parijsstraat 34, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 11:00 AM – 2:00 AM | Tuesday: 11:00 AM – 2:00 AM | Wednesday: 11:00 AM – 2:00 AM | Thursday: 11:00 AM – 2:00 AM | Friday: 11:00 AM – 2:00 AM | Saturday: 11:00 AM – 3:00 AM | Sunday: 11:00 AM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.5,
+        "ratings_total": 894,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAzLO-9hgwUcRU4aw2IWwnZc",
+        "website": "https://www.facebook.com/pages/Metafoor/135530549837877",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7080492,
+          50.8689034
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJGfo8nTxhwU",
+        "name": "Gnorgl",
+        "cafe_type": "bar",
+        "address": "Geldenaaksebaan 2, 3001 Leuven, Belgium",
+        "open_hr": "Monday: 10:00 PM – 6:00 AM | Tuesday: 10:00 PM – 6:00 AM | Wednesday: 10:00 PM – 6:00 AM | Thursday: 10:00 PM – 6:00 AM | Friday: Closed | Saturday: Closed | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.6,
+        "ratings_total": 94,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGfo8nTxhwUcRzv3_72_77wc",
+        "website": "http://www.lbk.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6999942,
+          50.879821
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJOX-tUhOX3E",
+        "name": "Cocktailbar",
+        "cafe_type": "bar",
+        "address": "De Pannelaan 68, 8660 De Panne, Belgium",
+        "open_hr": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": "",
+        "ratings_total": "",
+        "review_count": 0,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJOX-tUhOX3EcRwf6CvhW4XF0",
+        "website": "https://plopsahotel.be/nl/eten-en-drinken",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7002726,
+          50.8792401
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJUawzrtlgwU",
+        "name": "In Den Engel",
+        "cafe_type": "bar",
+        "address": "Grote Markt 15, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 1:00 PM – 12:00 AM | Tuesday: 1:00 PM – 12:00 AM | Wednesday: 1:00 PM – 12:00 AM | Thursday: 1:00 PM – 12:00 AM | Friday: 1:00 PM – 12:00 AM | Saturday: 6:00 PM – 12:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€",
+        "rating": 4.4,
+        "ratings_total": 111,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUawzrtlgwUcRdutqwMj31t8",
+        "website": "http://www.denengel.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7012455,
+          50.8810101
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJeTaxtNdhwU",
+        "name": "Blondie Shop & Bar",
+        "cafe_type": "bar",
+        "address": "Schrijnmakersstraat 19, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: 10:00 AM – 6:00 PM | Thursday: 10:00 AM – 6:00 PM | Friday: 12:00 – 8:00 PM | Saturday: 10:00 AM – 6:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 5,
+        "ratings_total": 11,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeTaxtNdhwUcRnMFfLnr8W0s",
+        "website": "https://blondieleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6996007,
+          50.8786213
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJlVNR-NhgwU",
+        "name": "Bar Rustic",
+        "cafe_type": "bar",
+        "address": "Oude Markt 50, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 12:00 PM – 3:00 AM | Tuesday: 12:00 PM – 3:00 AM | Wednesday: 12:00 PM – 3:00 AM | Thursday: 12:00 PM – 3:00 AM | Friday: 12:00 PM – 3:00 AM | Saturday: 12:00 PM – 3:00 AM | Sunday: 12:00 PM – 2:00 AM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "€€",
+        "rating": 4.4,
+        "ratings_total": 364,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlVNR-NhgwUcRJ3CMd2jvNME",
+        "website": "https://m.facebook.com/BarRusticLeuven/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6996959,
+          50.8810167
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJ0asGGbxhwU",
+        "name": "Hops 'N More",
+        "cafe_type": "bar",
+        "address": "Mechelsestraat 50, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 12:00 – 6:30 PM | Wednesday: 12:00 – 6:30 PM | Thursday: 12:00 – 6:30 PM | Friday: 12:00 – 9:00 PM | Saturday: 12:00 – 6:30 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.9,
+        "ratings_total": 199,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0asGGbxhwUcR1voFwaXbrSs",
+        "website": "http://www.hopsnmore.com/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7005855,
+          50.8784417
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJOb4R2KRhwU",
+        "name": "Olivita",
+        "cafe_type": "bar",
+        "address": "Naamsestraat 18, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 5:00 – 10:00 PM | Tuesday: 5:00 – 10:00 PM | Wednesday: 5:00 – 10:00 PM | Thursday: 5:00 – 10:00 PM | Friday: 5:00 – 10:00 PM | Saturday: 5:00 – 10:00 PM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.5,
+        "ratings_total": 86,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJOb4R2KRhwUcRE2vMX9evAdI",
+        "website": "http://www.olivita.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7006885,
+          50.878441
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJE42bgZ9hwU",
+        "name": "SLŌ",
+        "cafe_type": "bar",
+        "address": "Naamsestraat 16, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: Closed | Wednesday: 6:00 – 11:00 PM | Thursday: 6:00 – 11:00 PM | Friday: 6:00 PM – 12:00 AM | Saturday: 6:00 PM – 12:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.8,
+        "ratings_total": 79,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJE42bgZ9hwUcRrB2-cq4VwhY",
+        "website": "http://www.sloleuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7002743,
+          50.8784285
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJyyzkwdphwU",
+        "name": "Cantuszalen Prosit",
+        "cafe_type": "bar",
+        "address": "Zeelstraat 10, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 8:00 PM – 1:00 AM | Tuesday: 8:00 PM – 1:00 AM | Wednesday: 8:00 PM – 1:00 AM | Thursday: 8:00 PM – 1:00 AM | Friday: 8:00 PM – 1:00 AM | Saturday: 8:00 PM – 1:00 AM | Sunday: 8:00 PM – 1:00 AM",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 3.9,
+        "ratings_total": 25,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyyzkwdphwUcRjBzbyXUM72U",
+        "website": "",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.699938,
+          50.8784167
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJf-9QUdhgwU",
+        "name": "'T Gewelf",
+        "cafe_type": "bar",
+        "address": "Oude Markt 7, 3000 Leuven, Belgium",
+        "open_hr": "N/A",
+        "open_now": "unknown",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.7,
+        "ratings_total": 15,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJf-9QUdhgwUcRc7ZSJCDaMB4",
+        "website": "http://barvista.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.698203599999999,
+          50.8800148
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJSyq9FdlgwU",
+        "name": "Taste Of Asia Sushi",
+        "cafe_type": "bar",
+        "address": "Brusselsestraat 42A, 3000 Leuven, Belgium",
+        "open_hr": "Monday: Closed | Tuesday: 11:30 AM – 2:30 PM, 5:00 – 10:00 PM | Wednesday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM | Thursday: 11:30 AM – 2:30 PM, 5:00 – 10:00 PM | Friday: 11:30 AM – 2:30 PM, 5:00 – 10:00 PM | Saturday: 11:30 AM – 2:30 PM, 5:00 – 10:00 PM | Sunday: 11:30 AM – 2:30 PM, 5:00 – 10:00 PM",
+        "open_now": "yes",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "yes",
+        "price_avg": "€€",
+        "rating": 4.3,
+        "ratings_total": 318,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSyq9FdlgwUcRWA9h9-iuBbw",
+        "website": "http://www.tasteofasia-leuven.be/",
+        "source": "Google Places"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.700614,
+          50.8783183
+        ]
+      },
+      "properties": {
+        "feature_type": "cafe",
+        "id": "GP_ChIJxczMT4RhwU",
+        "name": "Cocktailbar - Professor",
+        "cafe_type": "bar",
+        "address": "Naamsestraat 20, 3000 Leuven, Belgium",
+        "open_hr": "Monday: 5:00 PM – 12:00 AM | Tuesday: 5:00 PM – 12:00 AM | Wednesday: 5:00 PM – 12:00 AM | Thursday: 5:00 PM – 12:00 AM | Friday: 5:00 PM – 1:00 AM | Saturday: 5:00 PM – 3:00 AM | Sunday: Closed",
+        "open_now": "no",
+        "wifi": "unknown",
+        "socket": "unknown",
+        "quite": "unknown",
+        "price_avg": "unknown",
+        "rating": 4.8,
+        "ratings_total": 239,
+        "review_count": 5,
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxczMT4RhwUcRmaNMsltwS-s",
+        "website": "https://cocktailprofessor.be/",
+        "source": "Google Places"
+      }
+    }
+  ]
+}
